@@ -9,6 +9,36 @@ define(function(require, exports, module) {
      * @lends Alpaca.Fields.OUPCKEditorField.prototype
      */
     {
+        toolbarOptions: {
+            "config1" : {
+                "toolbar": [
+                    [
+                        "Format",
+                        "Font",
+                        "FontSize"
+                    ],
+                    [
+                        "Bold",
+                        "Italic",
+                        "Underline",
+                        "StrikeThrough",
+                        "-",
+                        "Cut",
+                        "Undo",
+                        "Redo"
+                    ]
+                ]
+            },
+            "config2" : {
+                "toolbar": [
+                    [
+                        "Font",
+                        "Source"
+                    ]
+                ]
+            }
+        },
+
         /**
          * @see Alpaca.Fields.TextField#getFieldType
          */
@@ -21,6 +51,10 @@ define(function(require, exports, module) {
          */
         setup: function()
         {
+            if (this.options.ckeditor && this.toolbarOptions[this.options.ckeditor]) {
+                this.options.ckeditor = this.toolbarOptions[this.options.ckeditor]
+            }
+
             this.base();
         },
 
@@ -42,47 +76,6 @@ define(function(require, exports, module) {
 
         /* builder_helpers */
         ,
-
-        /**
-         * @private
-         * @see Alpaca.Fields.TextField#getSchemaOfOptions
-         */
-        getSchemaOfOptions: function() {
-
-            return Alpaca.merge(this.base(), {
-                "properties": {
-                    "localConfig": {
-                        "title": "config",
-                        "description": "Rules for generated markup",
-                        "type": "string", // <-- should be an array of objects!!
-                        "default": "",
-                        "readonly": true
-                    },
-                    "writerRules": {
-                        "title": "Writer Rules",
-                        "description": "Rules for generated markup",
-                        "type": "string", // <-- should be an array of objects!!
-                        "default": "",
-                        "readonly": true
-                    }
-                }
-            });
-
-        },
-
-        /**
-         * @private
-         * @see Alpaca.Fields.TextField#getOptionsForOptions
-         */
-        getOptionsForOptions: function() {
-            return Alpaca.merge(this.base(), {
-                "fields": {
-                    "writerRules": {
-                        "type": "text"
-                    }
-                }
-            });
-        },
 
         /**
          * @see Alpaca.Fields.TextField#getTitle
