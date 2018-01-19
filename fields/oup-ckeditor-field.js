@@ -35,6 +35,20 @@ define(function(require, exports, module) {
                         "Font",
                         "Source"
                     ]
+                ],
+                "removeButtons": null,
+                "stylesSet": [
+                    {
+                        "name": "Paragraph",
+                        "element": "p"
+                    },
+                    {
+                        "name": "OUP Custom Inline",
+                        "element": "span",
+                        "attributes": {
+                            "class": "mine"
+                        }
+                    }
                 ]
             }
         },
