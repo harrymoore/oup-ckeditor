@@ -36,6 +36,69 @@ define(function(require, exports, module) {
                         "Source"
                     ]
                 ]
+            },
+            "config3" : {
+                "toolbar": [
+                    [
+                        "Format",
+                        "Font",
+                        "FontSize",
+                        "Styles"
+                    ],
+                    [
+                        "cloudcms-image"
+                    ],
+                    [
+                        "Bold",
+                        "Italic",
+                        "-",
+                        "Undo",
+                        "Redo",
+                        "-",
+                        "Cut",
+                        "Copy",
+                        "Paste",
+                        "Find",
+                        "Replace",
+                        "-",
+                        "Outdent",
+                        "Indent",
+                        "-",
+                        "Print"
+                    ],
+                    [
+                        "NumberedList",
+                        "BulletedList",
+                        "-",
+                        "JustifyLeft",
+                        "JustifyCenter",
+                        "JustifyRight",
+                        "JustifyBlock"
+                    ],
+                    [
+                        "Table",
+                        "-",
+                        "Link",
+                        "Smiley",
+                        "TextColor",
+                        "BGColor",
+                        "Source"
+                    ]
+                ],
+                "removeButtons": null,
+                "stylesSet": [
+                    {
+                        "name": "Paragraph",
+                        "element": "p"
+                    },
+                    {
+                        "name": "OUP Custom Inline",
+                        "element": "span",
+                        "attributes": {
+                            "class": "mine"
+                        }
+                    }
+                ]
             }
         },
 
