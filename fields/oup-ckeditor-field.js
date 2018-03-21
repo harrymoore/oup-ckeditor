@@ -13,91 +13,110 @@ define(function(require, exports, module) {
             "config1" : {
                 "toolbar": [
                     [
-                        "Format",
-                        "Font",
-                        "FontSize"
-                    ],
-                    [
-                        "Bold",
-                        "Italic",
-                        "Underline",
-                        "StrikeThrough",
-                        "-",
-                        "Cut",
-                        "Undo",
-                        "Redo"
-                    ]
-                ]
-            },
-            "config2" : {
-                "toolbar": [
-                    [
-                        "Font",
-                        "Source"
-                    ]
-                ]
-            },
-            "config3" : {
-                "toolbar": [
-                    [
-                        "Format",
-                        "Font",
-                        "FontSize",
-                        "Styles"
-                    ],
-                    [
-                        "cloudcms-image"
-                    ],
-                    [
-                        "Bold",
-                        "Italic",
-                        "-",
-                        "Undo",
-                        "Redo",
-                        "-",
                         "Cut",
                         "Copy",
                         "Paste",
-                        "Find",
-                        "Replace",
                         "-",
-                        "Outdent",
-                        "Indent",
-                        "-",
-                        "Print"
+                        "Undo",
+                        "Redo"
                     ],
+                    [
+                        "Link",
+                        "Unlink",
+                        "Anchor",
+                        "cloudcms-link"
+                    ],
+                    [
+                        "Table",
+                        "HorizontalRule",
+                        "SpecialChar"
+                    ],
+                    [
+                        "Maximize",
+                        "ShowBlocks",
+                        "Source",
+                        "Preview"
+                    ],                        
+                    [
+                        "Bold",
+                        "Italic",
+                        "Strike",
+                        "Subscript",
+                        "Superscript",
+                        "-",
+                        "RemoveFormat"
+                    ],                        
                     [
                         "NumberedList",
                         "BulletedList",
+                        "-",
+                        "Outdent",
+                        "Indent",
+                        "Blockquote",
                         "-",
                         "JustifyLeft",
                         "JustifyCenter",
                         "JustifyRight",
                         "JustifyBlock"
+                    ],                        
+                    [
+                        "Format"
                     ],
                     [
-                        "Table",
+                        "cloudcms-image"
+                    ]                        
+                ]
+            },
+            "config2" : {
+                "toolbar": [
+                    [
+                        "SpecialChar",
+                        "Italic",
+                        "Subscript",
+                        "Superscript"
+                    ]                        
+                ]
+            },
+            "config3" : {
+                "toolbar": [
+                    [
+                        "Cut",
+                        "Copy",
+                        "Paste",
                         "-",
+                        "Undo",
+                        "Redo"
+                    ],
+                    [
                         "Link",
-                        "Smiley",
-                        "TextColor",
-                        "BGColor",
-                        "Source"
-                    ]
-                ],
-                "removeButtons": null,
-                "stylesSet": [
-                    {
-                        "name": "Paragraph",
-                        "element": "p"
-                    },
-                    {
-                        "name": "OUP Custom Inline",
-                        "element": "span",
-                        "attributes": {
-                            "class": "mine"
-                        }
-                    }
+                        "Unlink",
+                        "cloudcms-link"
+                    ],                        
+                    [
+                        "Bold",
+                        "Italic",
+                        "Strike",
+                        "Subscript",
+                        "Superscript",
+                        "SpecialChar",
+                        "-",
+                        "RemoveFormat"
+                    ],                        
+                    [
+                        "Format"
+                    ],
+                    [
+                        "cloudcms-image"
+                    ]                        
+                ]                                
+            },
+            "config4" : {
+                "toolbar": [
+                    [
+                        "Link",
+                        "Unlink",
+                        "cloudcms-link"
+                    ]                                                             
                 ]
             }
         },
