@@ -60,11 +60,27 @@ define(function (require, exports, module) {
                             "JustifyBlock"
                         ],
                         [
-                            "Format"
-                        ],
-                        [
                             "cloudcms-image"
                         ]
+                    ],
+                    "removeButtons": null,
+                    "stylesSet": [
+                        {
+                            "name": "Paragraph",
+                            "element": "p"
+                        },
+                        {
+                            "name": "Heading 2",
+                            "element": "H2"
+                        },
+                        {
+                            "name": "Heading 3",
+                            "element": "H3"
+                        },
+                        {
+                            "name": "Heading 4",
+                            "element": "H4"
+                        }
                     ]
                 },
                 "config2": {
@@ -103,11 +119,27 @@ define(function (require, exports, module) {
                             "RemoveFormat"
                         ],
                         [
-                            "Format"
-                        ],
-                        [
                             "cloudcms-image"
                         ]
+                    ],
+                    "removeButtons": null,
+                    "stylesSet": [
+                        {
+                            "name": "Paragraph",
+                            "element": "p"
+                        },
+                        {
+                            "name": "Heading 2",
+                            "element": "H2"
+                        },
+                        {
+                            "name": "Heading 3",
+                            "element": "H3"
+                        },
+                        {
+                            "name": "Heading 4",
+                            "element": "H4"
+                        }
                     ]
                 },
                 "config4": {
@@ -118,6 +150,27 @@ define(function (require, exports, module) {
                             "cloudcms-link"
                         ]
                     ],
+                    "cloudcms-link": {
+                        "linkPickerType": "file-picker",
+                        "linkPickerConfig": {
+                            "initialContainerPath": "/"
+                        }
+                    }
+                },
+                "config5" : {
+                    "toolbar": [
+                        ['Format', 'Font', 'FontSize'],
+                        ['Bold', 'Italic', 'Underline'],
+                        ['Image', 'Table', 'Source'],
+                        ['cloudcms-image', 'cloudcms-link']
+                    ],
+                    "cloudcms-image": {
+                        "imagePickerType": "file-picker",
+                        "imageUploadPath": "/Images",
+                        "imagePickerConfig": {
+                            "initialContainerPath": "/Images"
+                        }
+                    },
                     "cloudcms-link": {
                         "linkPickerType": "file-picker",
                         "linkPickerConfig": {
