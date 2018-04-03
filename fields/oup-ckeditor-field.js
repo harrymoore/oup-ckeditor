@@ -60,10 +60,12 @@ define(function (require, exports, module) {
                             "JustifyBlock"
                         ],
                         [
+                            "Format"
+                        ],
+                        [
                             "cloudcms-image"
                         ]
-                    ],
-                    "removeButtons": null,
+                    ],                    
                     "stylesSet": [
                         {
                             "name": "Paragraph",
