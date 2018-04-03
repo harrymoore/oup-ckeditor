@@ -65,7 +65,8 @@ define(function (require, exports, module) {
                         [
                             "cloudcms-image"
                         ]
-                    ],                    
+                    ], 
+                    "removeButtons": null,                   
                     "stylesSet": [
                         {
                             "name": "Paragraph",
