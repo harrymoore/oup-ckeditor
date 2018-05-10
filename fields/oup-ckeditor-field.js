@@ -63,7 +63,7 @@ define(function (require, exports, module) {
                             "Format"
                         ],
                         [
-                            "cloudcms-image"
+                            "cloudcms-image","cloudcms-link"
                         ]
                     ], 
                     "removeButtons": null,                   
@@ -84,7 +84,20 @@ define(function (require, exports, module) {
                             "name": "Heading 4",
                             "element": "H4"
                         }
-                    ]
+                    ],
+                    "cloudcms-image": {
+                        "imagePickerType": "file-picker",
+                        "imageUploadPath": "../Image_Library",
+                        "imagePickerConfig": {
+                            "initialContainerPath": "/Image_Library"
+                        }
+                    },
+                    "cloudcms-link": {
+                        "linkPickerType": "file-picker",
+                        "linkPickerConfig": {
+                            "initialContainerPath": "../"
+                        }
+                    }
                 },
                 "config2": {
                     "toolbar": [
