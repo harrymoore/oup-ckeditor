@@ -87,9 +87,10 @@ define(function (require, exports, module) {
                     ],
                     "cloudcms-image": {
                         "imagePickerType": "file-picker",
-                        "imageUploadPath": "../Image_Library",
+                        "imageUploadPath": "../Image Library",
                         "imagePickerConfig": {
-                            "initialContainerPath": "/Image_Library"
+                            "rootContainerPath": "../..",
+                            "initialContainerPath": "/Image Library"
                         }
                     },
                     "cloudcms-link": {
