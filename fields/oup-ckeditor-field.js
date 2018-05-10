@@ -90,7 +90,7 @@ define(function (require, exports, module) {
                         "imageUploadPath": "../Image Library",
                         "imagePickerConfig": {
                             "rootContainerPath": "../..",
-                            "initialContainerPath": "/Image Library"
+                            "initialContainerPath": "../Image Library"
                         }
                     },
                     "cloudcms-link": {
