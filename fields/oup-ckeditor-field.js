@@ -96,7 +96,8 @@ define(function (require, exports, module) {
                     "cloudcms-link": {
                         "linkPickerType": "file-picker",
                         "linkPickerConfig": {
-                            "initialContainerPath": "../"
+                            "rootContainerPath": "../..",
+                            "initialContainerPath": "."
                         }
                     }
                 },
