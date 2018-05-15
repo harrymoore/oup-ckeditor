@@ -99,7 +99,8 @@ define(function (require, exports, module) {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../Image Library"
                         }
-                    }
+                    },
+                    
                 },
                 "config2": {
                     "toolbar": [
@@ -158,7 +159,22 @@ define(function (require, exports, module) {
                             "name": "Heading 4",
                             "element": "H4"
                         }
-                    ]
+                    ],
+                    "cloudcms-image": {
+                        "imagePickerType": "file-picker",
+                        "imageUploadPath": "../Image Library",
+                        "imagePickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "../Image Library"
+                        }
+                    },
+                    "cloudcms-link": {
+                        "linkPickerType": "file-picker",
+                        "linkPickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "../Image Library"
+                        }
+                    }
                 },
                 "config4": {
                     "toolbar": [
@@ -173,29 +189,23 @@ define(function (require, exports, module) {
                         "linkPickerConfig": {
                             "initialContainerPath": "/"
                         }
-                    }
-                },
-                "config5" : {
-                    "toolbar": [
-                        ['Format', 'Font', 'FontSize'],
-                        ['Bold', 'Italic', 'Underline'],
-                        ['Image', 'Table', 'Source'],
-                        ['cloudcms-image', 'cloudcms-link']
-                    ],
+                    },
                     "cloudcms-image": {
                         "imagePickerType": "file-picker",
-                        "imageUploadPath": "/Images",
+                        "imageUploadPath": "../Image Library",
                         "imagePickerConfig": {
-                            "initialContainerPath": "/Images"
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "../Image Library"
                         }
                     },
                     "cloudcms-link": {
                         "linkPickerType": "file-picker",
                         "linkPickerConfig": {
-                            "initialContainerPath": "/"
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "../Image Library"
                         }
                     }
-                },
+                }
             },
 
             /**
