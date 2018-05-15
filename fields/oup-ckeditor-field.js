@@ -63,7 +63,7 @@ define(function (require, exports, module) {
                             "Format"
                         ],
                         [
-                            "cloudcms-image","cloudcms-link"
+                            "cloudcms-image"
                         ]
                     ], 
                     "removeButtons": null,                   
@@ -97,7 +97,7 @@ define(function (require, exports, module) {
                         "linkPickerType": "file-picker",
                         "linkPickerConfig": {
                             "rootContainerPath": "../../..",
-                            "initialContainerPath": "../Image Library"
+                            "initialContainerPath": "../"
                         }
                     },
                     
