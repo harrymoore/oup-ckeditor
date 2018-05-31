@@ -205,6 +205,18 @@ define(function (require, exports, module) {
                             "initialContainerPath": "../Image Library"
                         }
                     }
+                },
+                "config5": {
+                    "toolbar": [
+                        [
+                            "Bold",
+                            "H4",
+                            "SpecialChar",
+                            "Italic",
+                            "Subscript",
+                            "Superscript"
+                        ]
+                    ]
                 }
             },
 
