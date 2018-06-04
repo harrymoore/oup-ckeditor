@@ -210,7 +210,7 @@ define(function (require, exports, module) {
                     "toolbar": [
                         [
                             "Bold",
-                            "h4",
+                            "Format",
                             "SpecialChar",
                             "Italic",
                             "Subscript",
