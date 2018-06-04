@@ -210,17 +210,12 @@ define(function (require, exports, module) {
                     "toolbar": [
                         [
                             "Bold",
+                            "h4",
                             "SpecialChar",
                             "Italic",
                             "Subscript",
                             "Superscript"
                         ]
-                    ],
-                    "stylesSet": [
-                        {
-                            "name": "Heading 4",
-                            "element": "H4"
-                        }
                     ]
                 }
             },
