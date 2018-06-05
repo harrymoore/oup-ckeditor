@@ -267,7 +267,8 @@ define(function (require, exports, module) {
              */
             getDescription: function () {
                 return "Allow output markup rule overrides to ckeditor";
-            }
+            },
+            format_tags :'p;h1;h2;h3;h4;pre'
 
             /* end_builder_helpers */
         });
