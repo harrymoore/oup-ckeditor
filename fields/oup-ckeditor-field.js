@@ -86,20 +86,13 @@ define(function (require, exports, module) {
                         }
                     ],
                     "cloudcms-image": {
-        "imagePickerType": "file-picker",
-        "imagePickerConfig": {
-            "initialContainerPath": "/",
-            "mimetypeRegex": "image\/([^;\s]+)"
-        },
-        "imageClass": "",
-        "enableAltText": false,
-        "enableLink": false,
-        "linkPickerType": "file-picker",
-        "linkPickerConfig": {
-            "initialContainerPath": "/"
-        },
-        "linkClass": ""
-    },
+                        "imagePickerType": "file-picker",
+                        "imageUploadPath": "../Image Library",
+                        "imagePickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "../Image Library"
+                        }
+                    },
                     "cloudcms-link": {
                         "linkPickerType": "file-picker",
                         "linkPickerConfig": {
