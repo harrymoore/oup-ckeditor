@@ -94,7 +94,7 @@ define(function (require, exports, module) {
                         }
                     },
                     "cloudcms-link": {
-                        "linkPickerType": "file-picker",
+                        "linkPickerType": "node-picker",
                         "linkPickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../"
@@ -172,7 +172,7 @@ define(function (require, exports, module) {
                         "linkPickerType": "file-picker",
                         "linkPickerConfig": {
                             "rootContainerPath": "../../..",
-                            "initialContainerPath": "../Image Library"
+                            "initialContainerPath": "../"
                         }
                     }
                 },
@@ -202,7 +202,7 @@ define(function (require, exports, module) {
                         "linkPickerType": "file-picker",
                         "linkPickerConfig": {
                             "rootContainerPath": "../../..",
-                            "initialContainerPath": "../Image Library"
+                            "initialContainerPath": "../"
                         }
                     }
                 },
