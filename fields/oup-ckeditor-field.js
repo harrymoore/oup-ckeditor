@@ -130,12 +130,16 @@ define(function (require, exports, module) {
                         [
                             "Bold",
                             "Italic",
+                            "BulletedList",
                             "Strike",
                             "Subscript",
                             "Superscript",
                             "SpecialChar",
                             "-",
                             "RemoveFormat"
+                        ],
+                        [
+                            "Format"
                         ],
                         [
                             "cloudcms-image"
