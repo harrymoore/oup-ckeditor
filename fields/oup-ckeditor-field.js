@@ -213,7 +213,7 @@ define(function (require, exports, module) {
                 "config5": {
                     "toolbar": [
                         [
-                            "oupHello",
+                            "H4",
                             "-",
                             "Italic",
                             "SpecialChar",
@@ -242,23 +242,7 @@ define(function (require, exports, module) {
             setup: function () {
                 if (this.options.ckeditor && this.toolbarOptions[this.options.ckeditor]) {
                     this.options.ckeditor.format_tags  = 'p;h1;h2;h3;h4;pre';
-                    this.options.ckeditor = this.toolbarOptions[this.options.ckeditor]
-                    this.options.plugins.add(pluginName, {
-                        icons: "oupHello",
-                        init: function (editor) {
-                            editor.ui.addButton(pluginName, {
-                                label: 'Hello',
-                                command: pluginName
-                            });
-                
-                            editor.addCommand(pluginName, {
-                                exec: function (editor) {
-                                    editor.insertHtml("<em>Hello</em>");
-                                }
-                            });
-                        }
-                    });
-                
+                    this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
                 }
 
                 this.base();
