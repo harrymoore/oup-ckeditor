@@ -213,12 +213,17 @@ define(function (require, exports, module) {
                 "config5": {
                     "toolbar": [
                         [
-                            "Bold",
-                            "Format",
-                            "SpecialChar",
+                            "H4",
+                            "-",
                             "Italic",
+                            "SpecialChar",
                             "Subscript",
-                            "Superscript"
+                            "Superscript",
+                            "-",
+                            "Link",
+                            "Unlink",
+                            "-",
+                            "ShowBlocks"
                         ]
                     ]
                 }
