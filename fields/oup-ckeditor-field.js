@@ -63,7 +63,8 @@ define(function (require, exports, module) {
                             "Format"
                         ],
                         [
-                            "cloudcms-image"
+                            "cloudcms-image",
+                            "cloudcms-iframe"
                         ]
                     ], 
                     "removeButtons": null,                   
