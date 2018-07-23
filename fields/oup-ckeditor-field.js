@@ -23,8 +23,7 @@ define(function (require, exports, module) {
                         [
                             "Link",
                             "Unlink",
-                            "Anchor",
-                            "cloudcms-link"
+                            "Anchor"
                         ],
                         [
                             "Table",
@@ -94,13 +93,6 @@ define(function (require, exports, module) {
                             "initialContainerPath": "../Image Library"
                         }
                     },
-                    "cloudcms-link": {
-                        "linkPickerType": "file-picker",
-                        "linkPickerConfig": {
-                            "rootContainerPath": "../../..",
-                            "initialContainerPath": "../"
-                        }
-                    },
                     
                 },
                 "config2": {
@@ -125,8 +117,7 @@ define(function (require, exports, module) {
                         ],
                         [
                             "Link",
-                            "Unlink",
-                            "cloudcms-link"
+                            "Unlink"
                         ],
                         [
                             "Bold",
@@ -172,44 +163,16 @@ define(function (require, exports, module) {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../Image Library"
                         }
-                    },
-                    "cloudcms-link": {
-                        "linkPickerType": "file-picker",
-                        "linkPickerConfig": {
-                            "rootContainerPath": "../../..",
-                            "initialContainerPath": "../"
-                        }
                     }
                 },
                 "config4": {
                     "toolbar": [
                         [
                             "Link",
-                            "Unlink",
-                            "cloudcms-link"
+                            "Unlink"
                         ]
-                    ],
-                    "cloudcms-link": {
-                        "linkPickerType": "file-picker",
-                        "linkPickerConfig": {
-                            "initialContainerPath": "/"
-                        }
-                    },
-                    "cloudcms-image": {
-                        "imagePickerType": "file-picker",
-                        "imageUploadPath": "../Image Library",
-                        "imagePickerConfig": {
-                            "rootContainerPath": "../../..",
-                            "initialContainerPath": "../Image Library"
-                        }
-                    },
-                    "cloudcms-link": {
-                        "linkPickerType": "file-picker",
-                        "linkPickerConfig": {
-                            "rootContainerPath": "../../..",
-                            "initialContainerPath": "../"
-                        }
-                    }
+                    ]
+                   
                 },
                 "config5": {
                     "toolbar": [
