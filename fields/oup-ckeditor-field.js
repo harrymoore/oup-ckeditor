@@ -64,8 +64,7 @@ define(function (require, exports, module) {
                         ],
                         [
                             "cloudcms-image",
-                            "cloudcms-iframe",
-                            "ouphello"
+                            "cloudcms-iframe"
                         ]
                     ], 
                     "removeButtons": null,                   
@@ -239,23 +238,6 @@ define(function (require, exports, module) {
                 if (this.options.ckeditor && this.toolbarOptions[this.options.ckeditor]) {
                     this.options.ckeditor.format_tags  = 'p;h1;h2;h3;h4;pre';
                     this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
-                    this.options.ckeditor.plugins.add(pluginName, {
-                        icons: "ouphello",
-                        init: function (editor) {
-                            // button
-                            editor.ui.addButton(pluginName, {
-                                label: 'Hello',
-                                command: "ouphello"
-                            });
-               
-                            editor.addCommand(pluginName, {
-                                exec: function (editor) {
-                                    editor.insertHtml("<em>Hello</em>");
-                                }
-                            });
-                        }
-                    });
-
                 }
 
                 this.base();
