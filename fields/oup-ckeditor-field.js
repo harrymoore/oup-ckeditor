@@ -149,8 +149,7 @@ define(function (require, exports, module) {
                             "Format"
                         ],
                         [
-                            "cloudcms-image",
-                            "stylesSet"
+                            "cloudcms-image"
                         ]
                     ],
                     "removeButtons": null,
