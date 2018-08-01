@@ -59,7 +59,8 @@ define(function (require, exports, module) {
                             "JustifyBlock"
                         ],
                         [
-                            "Format"
+                            "Format",
+                            "Styles"
                         ],
                         [
                             "cloudcms-image",
@@ -146,7 +147,8 @@ define(function (require, exports, module) {
                             "RemoveFormat"
                         ],
                         [
-                            "Format"
+                            "Format",
+                            "Styles"
                         ],
                         [
                             "cloudcms-image"
