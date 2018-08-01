@@ -63,8 +63,7 @@ define(function (require, exports, module) {
                         ],
                         [
                             "cloudcms-image",
-                            "cloudcms-iframe",
-                            "stylesSet"
+                            "cloudcms-iframe"
                         ]
                     ], 
                     "removeButtons": null,                   
@@ -84,7 +83,22 @@ define(function (require, exports, module) {
                         {
                             "name": "Heading 4",
                             "element": "H4"
+                        },
+                        {
+                            "name": "OUP Custom Inline",
+                            "element": "span",
+                            "attributes": {
+                                "class": "mine"
+                            }
+                        },
+                        {
+                            "name": "OUP bulleted list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "bullet"
+                            }
                         }
+                        
                     ],
                     "cloudcms-image": {
                         "imagePickerType": "file-picker",
@@ -156,6 +170,20 @@ define(function (require, exports, module) {
                         {
                             "name": "Heading 4",
                             "element": "H4"
+                        },
+                        {
+                            "name": "OUP Custom Inline",
+                            "element": "span",
+                            "attributes": {
+                                "class": "mine"
+                            }
+                        },
+                        {
+                            "name": "OUP bulleted list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "bullet"
+                            }
                         }
                     ],
                     "cloudcms-image": {
