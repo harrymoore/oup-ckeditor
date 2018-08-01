@@ -135,7 +135,8 @@ define(function (require, exports, module) {
                         ],
                         [
                             "cloudcms-image",
-                            "ouphello"
+                            "ouphello",
+                            "stylesSet"
                         ]
                     ],
                     "removeButtons": null,
