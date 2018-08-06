@@ -210,6 +210,9 @@ define(function (require, exports, module) {
                         [
                             "H4",
                             "-",
+                            "Hello",
+                            "ouphello",
+                            "-",
                             "Italic",
                             "SpecialChar",
                             "Subscript",
@@ -239,7 +242,24 @@ define(function (require, exports, module) {
                     this.options.ckeditor.format_tags  = 'p;h1;h2;h3;h4;pre';
                     this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
                 }
-
+                var pluginName = "ouphello";
+                window.CKEDITOR.plugins.add(pluginName, {
+                    icons: pluginName,
+                    init: function (editor) {
+            
+                        // button
+                        editor.ui.addButton(pluginName, {
+                            label: 'Hello',
+                            command: pluginName
+                        });
+            
+                        editor.addCommand(pluginName, {
+                            exec: function (editor) {
+                                editor.insertHtml("<em>Hello</em>");
+                            }
+                        });
+                    }
+                });
                 this.base();
             },
 
