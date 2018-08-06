@@ -210,7 +210,6 @@ define(function (require, exports, module) {
                         [
                             "H4",
                             "-",
-                            "Hello",
                             "ouphello",
                             "-",
                             "Italic",
