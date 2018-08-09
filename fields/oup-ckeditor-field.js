@@ -4,6 +4,11 @@ define(function (require, exports, module) {
 
     var Alpaca = $.alpaca;
 
+    //window.CKEDITOR.config.scayt_autoStartup = true;
+    //window.CKEDITOR.config.wsc_autoStartup = true;
+    //window.CKEDITOR.config.disableNativeSpellChecker = false;
+    //window.CKEDITOR.config.removePlugins = 'scayt';
+
     Alpaca.Fields.OUPCKEditorField = Alpaca.Fields.CKEditorField.extend(
         /**
          * @lends Alpaca.Fields.OUPCKEditorField.prototype
@@ -146,6 +151,7 @@ define(function (require, exports, module) {
                             "-",
                             "RemoveFormat"
                         ],
+                        '/',
                         [
                             "Format",
                             "Styles"
@@ -208,7 +214,18 @@ define(function (require, exports, module) {
                 "config5": {
                     "toolbar": [
                         [
+                            "ouphello",
                             "H4",
+                            "DIV",
+                            "BidiLtr",
+                            "BidiRtl",
+                            "Scayt",
+                            "SpellChecker",
+                            "Smiley",
+                            "-",
+                            "Print",
+                            "Preview",
+                            "PageBreak",
                             "-",
                             "Italic",
                             "SpecialChar",
@@ -239,7 +256,6 @@ define(function (require, exports, module) {
                     this.options.ckeditor.format_tags  = 'p;h1;h2;h3;h4;pre';
                     this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
                 }
-
                 this.base();
             },
 
@@ -277,10 +293,12 @@ define(function (require, exports, module) {
             /* end_builder_helpers */
         });
 
+    
+
     Alpaca.registerMessages({
         "noDependentField": "No local config found"
     });
 
     Alpaca.registerFieldClass("oup-ckeditor", Alpaca.Fields.OUPCKEditorField);
-
+   
 });
