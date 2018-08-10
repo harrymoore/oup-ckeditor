@@ -214,18 +214,7 @@ define(function (require, exports, module) {
                 "config5": {
                     "toolbar": [
                         [
-                            "ouphello",
-                            "H4",
-                            "DIV",
-                            "BidiLtr",
-                            "BidiRtl",
-                            "Scayt",
-                            "SpellChecker",
-                            "Smiley",
-                            "-",
-                            "Print",
-                            "Preview",
-                            "PageBreak",
+                            "Styles",
                             "-",
                             "Italic",
                             "SpecialChar",
@@ -237,7 +226,18 @@ define(function (require, exports, module) {
                             "-",
                             "ShowBlocks"
                         ]
-                    ]
+                    ],
+                    "removeButtons": null,                   
+                    "stylesSet": [
+                        {
+                            "name": "Paragraph",
+                            "element": "p"
+                        },
+                        {
+                            "name": "Heading 4",
+                            "element": "H4"
+                        }
+                    ],
                 }
             },
 
