@@ -263,8 +263,8 @@ define(function (require, exports, module) {
              */
             setup: function () {
                 if (this.options.ckeditor && this.toolbarOptions[this.options.ckeditor]) {
-                    this.options.ckeditor.format_tags  = 'p;h1;h2;h3;h4;pre';
                     this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
+                    this.options.ckeditor.format_tags  = 'p;h2;h3;h4;pre';
                 }
                 this.base();
             },
