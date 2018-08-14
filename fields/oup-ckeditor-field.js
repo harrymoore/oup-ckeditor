@@ -211,7 +211,14 @@ define(function (require, exports, module) {
                         [
                             "cloudcms-link"
                         ]
-                    ]
+                    ],
+                    "cloudcms-link": {
+                        "linkPickerType": "file-picker",
+                        "linkPickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "../Secondary Pages"
+                        }
+                    }
                    
                 },
                 "config5": {
