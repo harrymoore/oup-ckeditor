@@ -207,7 +207,7 @@ define(function (require, exports, module) {
                         [
                             "Link",
                             "Unlink"
-                        ]
+                        ],
                         [
                             "cloudcms-link"
                         ]
