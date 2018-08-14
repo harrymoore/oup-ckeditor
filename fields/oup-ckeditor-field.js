@@ -216,7 +216,7 @@ define(function (require, exports, module) {
                         "linkPickerType": "file-picker",
                         "linkPickerConfig": {
                             "rootContainerPath": "../../..",
-                            "initialContainerPath": "../Secondary Pages"
+                            "initialContainerPath": "../"
                         }
                     }
                    
