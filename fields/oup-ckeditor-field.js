@@ -230,6 +230,65 @@ define(function (require, exports, module) {
                             "element": "H4"
                         }
                     ],
+                },
+                "config6": {
+                    "toolbar": [
+                        [
+                            "Cut",
+                            "Copy",
+                            "Paste",
+                            "-",
+                            "Undo",
+                            "Redo"
+                        ],
+                        [
+                            "Link",
+                            "Unlink",
+                            "Anchor"
+                        ],
+                        [
+                            "Table",
+                            "HorizontalRule",
+                            "SpecialChar"
+                        ],
+                        [
+                            "Maximize",
+                            "ShowBlocks",
+                            "Source",
+                            "Preview"
+                        ],
+                        [
+                            "Bold",
+                            "Italic",
+                            "Strike",
+                            "Subscript",
+                            "Superscript",
+                            "-",
+                            "RemoveFormat"
+                        ],
+                        [
+                            "NumberedList",
+                            "BulletedList",
+                            "-",
+                            "Outdent",
+                            "Indent",
+                            "Blockquote",
+                            "-",
+                            "JustifyLeft",
+                            "JustifyCenter",
+                            "JustifyRight",
+                            "JustifyBlock"
+                        ],
+                        [
+                            "Format"
+                        ],
+                        [
+                            "cloudcms-image"
+                        ],
+                        [
+                            "cloudcms-iframe"
+                        ]
+                    ]
                 }
             },
 
