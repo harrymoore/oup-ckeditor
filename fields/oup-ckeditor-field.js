@@ -71,7 +71,7 @@ define(function (require, exports, module) {
                         ],
                         [
                             "cloudcms-image"
-                        ]
+                        ],
                         [
                             "cloudcms-iframe"
                         ]
