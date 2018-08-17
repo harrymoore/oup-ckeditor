@@ -21,6 +21,8 @@ define(function (require, exports, module) {
                             "Cut",
                             "Copy",
                             "Paste",
+                            "PasteText",
+                            "PasteFromWord",
                             "-",
                             "Undo",
                             "Redo"
@@ -68,7 +70,9 @@ define(function (require, exports, module) {
                             "Styles"
                         ],
                         [
-                            "cloudcms-image",
+                            "cloudcms-image"
+                        ]
+                        [
                             "cloudcms-iframe"
                         ]
                     ], 
@@ -85,17 +89,6 @@ define(function (require, exports, module) {
                         {
                             "name": "Heading 3",
                             "element": "H3"
-                        },
-                        {
-                            "name": "Heading 4",
-                            "element": "H4"
-                        },
-                        {
-                            "name": "OUP Custom Inline",
-                            "element": "span",
-                            "attributes": {
-                                "class": "mine"
-                            }
                         },
                         {
                             "name": "OUP bulleted list",
@@ -173,17 +166,6 @@ define(function (require, exports, module) {
                         {
                             "name": "Heading 3",
                             "element": "H3"
-                        },
-                        {
-                            "name": "Heading 4",
-                            "element": "H4"
-                        },
-                        {
-                            "name": "OUP Custom Inline",
-                            "element": "span",
-                            "attributes": {
-                                "class": "mine"
-                            }
                         },
                         {
                             "name": "OUP bulleted list",
