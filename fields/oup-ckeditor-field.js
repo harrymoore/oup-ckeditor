@@ -96,6 +96,20 @@ define(function (require, exports, module) {
                             "attributes": {
                                 "class": "bullet"
                             }
+                        },
+                        {
+                            "name": "OUP floatLeft Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatLeft"
+                            }
+                        },
+                        {
+                            "name": "OUP floatRight Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatRight"
+                            }
                         }
                         
                     ],
@@ -172,6 +186,20 @@ define(function (require, exports, module) {
                             "element": "ul",
                             "attributes": {
                                 "class": "bullet"
+                            }
+                        },
+                        {
+                            "name": "OUP floatLeft Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatLeft"
+                            }
+                        },
+                        {
+                            "name": "OUP floatRight Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatRight"
                             }
                         }
                     ],
@@ -280,7 +308,8 @@ define(function (require, exports, module) {
                             "JustifyBlock"
                         ],
                         [
-                            "Format"
+                            "Format",
+                            "Styles"
                         ],
                         [
                             "cloudcms-image"
@@ -288,7 +317,51 @@ define(function (require, exports, module) {
                         [
                             "cloudcms-iframe"
                         ]
-                    ]
+                    ],
+                    "removeButtons": null,
+                    "stylesSet": [
+                        {
+                            "name": "Paragraph",
+                            "element": "p"
+                        },
+                        {
+                            "name": "Heading 2",
+                            "element": "H2"
+                        },
+                        {
+                            "name": "Heading 3",
+                            "element": "H3"
+                        },
+                        {
+                            "name": "OUP bulleted list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "bullet"
+                            }
+                        },
+                        {
+                            "name": "OUP floatLeft Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatLeft"
+                            }
+                        },
+                        {
+                            "name": "OUP floatRight Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatRight"
+                            }
+                        }
+                    ],
+                    "cloudcms-image": {
+                        "imagePickerType": "file-picker",
+                        "imageUploadPath": "../Image Library",
+                        "imagePickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "../Image Library"
+                        }
+                    }
                 }
             },
 
