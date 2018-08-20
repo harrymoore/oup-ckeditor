@@ -226,7 +226,7 @@ define(function (require, exports, module) {
                         "linkPickerType": "file-picker",
                         "linkPickerConfig": {
                             "rootContainerPath": "../../..",
-                            "initialContainerPath": "../"
+                            "initialContainerPath": "/"
                         }
                     }
                    
@@ -359,7 +359,7 @@ define(function (require, exports, module) {
                         "imageUploadPath": "../Image Library",
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
-                            "initialContainerPath": "../"
+                            "initialContainerPath": "/"
                         }
                     }
                 }
