@@ -208,7 +208,7 @@ define(function (require, exports, module) {
                         "imageUploadPath": "../Image Library",
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
-                            "initialContainerPath": "../Image Library"
+                            "initialContainerPath": "../"
                         }
                     }
                 },
@@ -359,7 +359,7 @@ define(function (require, exports, module) {
                         "imageUploadPath": "../Image Library",
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
-                            "initialContainerPath": "../Image Library"
+                            "initialContainerPath": "../"
                         }
                     }
                 }
