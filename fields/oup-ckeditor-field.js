@@ -394,8 +394,9 @@ define(function (require, exports, module) {
              */
             setup: function () {
                 if (this.options.ckeditor && this.toolbarOptions[this.options.ckeditor]) {
+                    var type = this.options.ckeditor;
                     this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
-                    if(this.options.ckeditor && this.options.ckeditor == "config5"){
+                    if(type && type == "config5"){
                         this.options.ckeditor.format_tags  = 'p;h2;h3;h4;pre';
                     } else {
                         this.options.ckeditor.format_tags  = 'p;h2;h3;pre';
