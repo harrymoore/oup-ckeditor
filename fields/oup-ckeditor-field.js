@@ -197,7 +197,7 @@ define(function (require, exports, module) {
                 "config5": {
                     "toolbar": [
                         [
-                            "Styles",
+                            "Format",
                             "-",
                             "Italic",
                             "SpecialChar",
@@ -210,17 +210,7 @@ define(function (require, exports, module) {
                             "ShowBlocks"
                         ]
                     ],
-                    "removeButtons": null,                   
-                    "stylesSet": [
-                        {
-                            "name": "Paragraph",
-                            "element": "p"
-                        },
-                        {
-                            "name": "Heading 4",
-                            "element": "H4"
-                        }
-                    ],
+                    "removeButtons": null
                 },
                 "config6": {
                     "toolbar": [
