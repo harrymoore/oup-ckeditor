@@ -375,8 +375,8 @@ define(function (require, exports, module) {
                         "imagePickerType": "file-picker",
                         "imageUploadPath": "../Image Library",
                         "imagePickerConfig": {
-                            "rootContainerPath": "./",
-                            "initialContainerPath": "{{nearestJournalFolderPath}}/Row Containers, Content Blocks, and Widgets"
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "./"
                         }
                     }
                 }
