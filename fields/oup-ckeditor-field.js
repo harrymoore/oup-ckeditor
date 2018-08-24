@@ -155,7 +155,10 @@ define(function (require, exports, module) {
                         [
                             "Format",
                             "Styles"
-                        ]
+                        ],
+                        [
+                            "cloudcms-image"
+                        ],
                     ],
                     "removeButtons": null,
                     "stylesSet": [
@@ -184,7 +187,15 @@ define(function (require, exports, module) {
                                 "class": "floatRight"
                             }
                         }
-                    ]
+                    ],
+                    "cloudcms-image": {
+                        "imagePickerType": "file-picker",
+                        "imageUploadPath": "../Image Library",
+                        "imagePickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "./"
+                        }
+                    }
                 },
                 "config4": {
                     "toolbar": [
@@ -338,10 +349,7 @@ define(function (require, exports, module) {
                         [
                             "Format",
                             "Styles"
-                        ],
-                        [
-                            "cloudcms-image"
-                        ],
+                        ]
                     ],
                     "removeButtons": null,
                     "stylesSet": [
@@ -370,15 +378,7 @@ define(function (require, exports, module) {
                                 "class": "floatRight"
                             }
                         }
-                    ],
-                    "cloudcms-image": {
-                        "imagePickerType": "file-picker",
-                        "imageUploadPath": "../Image Library",
-                        "imagePickerConfig": {
-                            "rootContainerPath": "../../..",
-                            "initialContainerPath": "./"
-                        }
-                    }
+                    ]
                 }
             },
 
@@ -397,7 +397,7 @@ define(function (require, exports, module) {
                     var type = this.options.ckeditor;
                     this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
                     if(type && type == "config5"){
-                        this.options.ckeditor.format_tags  = 'p;h2;h3;h4;pre';
+                        this.options.ckeditor.format_tags  = 'p;h4;pre';
                     } else {
                         this.options.ckeditor.format_tags  = 'p;h2;h3;pre';
                     }
