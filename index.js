@@ -1,7 +1,7 @@
 define(function (require, exports, module) {
     // Custom plugins/buttons
-    var plugin = require("plugins/plugin.js");
-    var action = require("plugins/action.js");
+    var plugin = require(".plugins/plugin.js");
+    var action = require(".plugins/action.js");
 
     // register new plugin below. Pass Plugin Name, Plugin Label and Action item as parameters and put action item in action.js using
     plugin.generatePlugin("ouphello", "Hello", action.actionOUPHELLO);
