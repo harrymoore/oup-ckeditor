@@ -78,6 +78,13 @@ define(function (require, exports, module) {
                             "element": "p"
                         },
                         {
+                            "name": "OUP Notice",
+                            "element": "div",
+                            "attributes": {
+                                "class": "notice"
+                            }
+                        },
+                        {
                             "name": "OUP bulleted list",
                             "element": "ul",
                             "attributes": {
