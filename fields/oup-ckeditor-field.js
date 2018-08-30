@@ -63,12 +63,6 @@ define(function (require, exports, module) {
                         [
                             "Format",
                             "Styles"
-                        ],
-                        [
-                            "cloudcms-image"
-                        ],
-                        [
-                            "cloudcms-iframe"
                         ]
                     ], 
                     "removeButtons": null,                   
@@ -107,14 +101,6 @@ define(function (require, exports, module) {
                         }
                         
                     ],
-                    "cloudcms-image": {
-                        "imagePickerType": "file-picker",
-                        "imageUploadPath": "../Image Library",
-                        "imagePickerConfig": {
-                            "rootContainerPath": "../../..",
-                            "initialContainerPath": "../Image Library"
-                        }
-                    },
                     
                 },
                 "config2": {
@@ -157,10 +143,7 @@ define(function (require, exports, module) {
                         [
                             "Format",
                             "Styles"
-                        ],
-                        [
-                            "cloudcms-image"
-                        ],
+                        ]
                     ],
                     "removeButtons": null,
                     "stylesSet": [
@@ -189,15 +172,7 @@ define(function (require, exports, module) {
                                 "class": "floatRight"
                             }
                         }
-                    ],
-                    "cloudcms-image": {
-                        "imagePickerType": "file-picker",
-                        "imageUploadPath": "../Image Library",
-                        "imagePickerConfig": {
-                            "rootContainerPath": "../../..",
-                            "initialContainerPath": "./"
-                        }
-                    }
+                    ]
                 },
                 "config4": {
                     "toolbar": [
@@ -276,12 +251,6 @@ define(function (require, exports, module) {
                         [
                             "Format",
                             "Styles"
-                        ],
-                        [
-                            "cloudcms-image"
-                        ],
-                        [
-                            "cloudcms-iframe"
                         ]
                     ],
                     "removeButtons": null,
@@ -311,15 +280,7 @@ define(function (require, exports, module) {
                                 "class": "floatRight"
                             }
                         }
-                    ],
-                    "cloudcms-image": {
-                        "imagePickerType": "file-picker",
-                        "imageUploadPath": "../Image Library",
-                        "imagePickerConfig": {
-                            "rootContainerPath": "../../..",
-                            "initialContainerPath": "./"
-                        }
-                    }
+                    ]
                 },
                 "config7": {
                     "toolbar": [
