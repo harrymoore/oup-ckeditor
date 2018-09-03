@@ -119,9 +119,9 @@ define(function (require, exports, module) {
                         }
                     },
                     "cloudcms-link": {
-                        "imagePickerType": "file-picker",
-                        "imageUploadPath": "../Document Library",
-                        "imagePickerConfig": {
+                        "linkPickerType": "file-picker",
+                        "linkUploadPath": "../Document Library",
+                        "linkPickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../Document Library"
                         }
