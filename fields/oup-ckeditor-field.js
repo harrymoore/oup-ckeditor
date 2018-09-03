@@ -69,6 +69,9 @@ define(function (require, exports, module) {
                         ],
                         [
                             "cloudcms-iframe"
+                        ],
+                        [
+                            "cloudcms-link"
                         ]
                     ], 
                     "removeButtons": null,                   
@@ -115,7 +118,14 @@ define(function (require, exports, module) {
                             "initialContainerPath": "../Image Library"
                         }
                     },
-                    
+                    "cloudcms-link": {
+                        "imagePickerType": "file-picker",
+                        "imageUploadPath": "../Document Library",
+                        "imagePickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "../Document Library"
+                        }
+                    }
                 },
                 "config2": {
                     "toolbar": [
