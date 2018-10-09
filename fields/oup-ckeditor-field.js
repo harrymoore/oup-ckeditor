@@ -116,7 +116,8 @@ define(function (require, exports, module) {
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../Image Library"
-                        }
+                        },
+                        "uploadPath": null
                     },
                     "cloudcms-link": {
                         "linkPickerType": "file-picker",
@@ -124,7 +125,8 @@ define(function (require, exports, module) {
                         "linkPickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../Document Library"
-                        }
+                        },
+                        "uploadPath": null
                     }
                 },
                 "config2": {
@@ -206,7 +208,8 @@ define(function (require, exports, module) {
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "./"
-                        }
+                        },
+                        "uploadPath": null
                     }
                 },
                 "config4": {
@@ -328,7 +331,8 @@ define(function (require, exports, module) {
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "./"
-                        }
+                        },
+                        "uploadPath": null
                     }
                 },
                 "config7": {
