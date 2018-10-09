@@ -117,7 +117,7 @@ define(function (require, exports, module) {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../Image Library"
                         },
-                        "uploadPath": null
+                        "imageUploadPath": null
                     },
                     "cloudcms-link": {
                         "linkPickerType": "file-picker",
@@ -126,7 +126,7 @@ define(function (require, exports, module) {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../Document Library"
                         },
-                        "uploadPath": null
+                        "linkUploadPath": null
                     }
                 },
                 "config2": {
