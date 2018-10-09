@@ -115,7 +115,8 @@ define(function (require, exports, module) {
                         "imageUploadPath": "../Image Library",
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
-                            "initialContainerPath": "../Image Library"
+                            "initialContainerPath": "../Image Library",
+                            "uploadPath": null,
                         },
                         "imageUploadPath": null
                     },
@@ -124,7 +125,8 @@ define(function (require, exports, module) {
                         "linkUploadPath": "../Document Library",
                         "linkPickerConfig": {
                             "rootContainerPath": "../../..",
-                            "initialContainerPath": "../Document Library"
+                            "initialContainerPath": "../Document Library",
+                            "uploadPath": null,
                         },
                         "linkUploadPath": null
                     }
