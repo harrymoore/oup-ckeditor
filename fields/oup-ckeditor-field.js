@@ -112,23 +112,20 @@ define(function (require, exports, module) {
                     ],
                     "cloudcms-image": {
                         "imagePickerType": "file-picker",
-                        "imageUploadPath": "../Image Library",
+                        "imageUploadPath": null,
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../Image Library",
-                            "uploadPath": null,
-                        },
-                        "imageUploadPath": null
+                        }
                     },
                     "cloudcms-link": {
                         "linkPickerType": "file-picker",
-                        "linkUploadPath": "../Document Library",
+                        "linkUploadPath": null,
                         "linkPickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../Document Library",
                             "uploadPath": null,
-                        },
-                        "linkUploadPath": null
+                        }
                     }
                 },
                 "config2": {
@@ -206,7 +203,7 @@ define(function (require, exports, module) {
                     ],
                     "cloudcms-image": {
                         "imagePickerType": "file-picker",
-                        "imageUploadPath": "../Image Library",
+                        "imageUploadPath": null,
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "./"
@@ -329,7 +326,7 @@ define(function (require, exports, module) {
                     ],
                     "cloudcms-image": {
                         "imagePickerType": "file-picker",
-                        "imageUploadPath": "../Image Library",
+                        "imageUploadPath": null,
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "./"
