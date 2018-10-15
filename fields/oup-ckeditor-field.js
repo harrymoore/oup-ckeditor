@@ -73,10 +73,9 @@ define(function (require, exports, module) {
                         [
                             "cloudcms-link"
                         ]
-                    ], 
-                    "removeButtons": null,                   
-                    "stylesSet": [
-                        {
+                    ],
+                    "removeButtons": null,
+                    "stylesSet": [{
                             "name": "Paragraph",
                             "element": "p"
                         },
@@ -108,7 +107,7 @@ define(function (require, exports, module) {
                                 "class": "floatRight"
                             }
                         }
-                        
+
                     ],
                     "cloudcms-image": {
                         "imagePickerType": "file-picker",
@@ -173,8 +172,7 @@ define(function (require, exports, module) {
                         ],
                     ],
                     "removeButtons": null,
-                    "stylesSet": [
-                        {
+                    "stylesSet": [{
                             "name": "Paragraph",
                             "element": "p"
                         },
@@ -215,7 +213,7 @@ define(function (require, exports, module) {
                         [
                             "Link",
                             "Unlink"
-                        ]  
+                        ]
                     ]
                 },
                 "config5": {
@@ -296,8 +294,7 @@ define(function (require, exports, module) {
                         ]
                     ],
                     "removeButtons": null,
-                    "stylesSet": [
-                        {
+                    "stylesSet": [{
                             "name": "Paragraph",
                             "element": "p"
                         },
@@ -366,8 +363,7 @@ define(function (require, exports, module) {
                         ]
                     ],
                     "removeButtons": null,
-                    "stylesSet": [
-                        {
+                    "stylesSet": [{
                             "name": "Paragraph",
                             "element": "p"
                         },
@@ -410,10 +406,10 @@ define(function (require, exports, module) {
                 if (this.options.ckeditor && this.toolbarOptions[this.options.ckeditor]) {
                     var type = this.options.ckeditor;
                     this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
-                    if(type && type == "config5"){
-                        this.options.ckeditor.format_tags  = 'p;h4;pre';
+                    if (type && type == "config5") {
+                        this.options.ckeditor.format_tags = 'p;h4;pre';
                     } else {
-                        this.options.ckeditor.format_tags  = 'p;h2;h3;pre';
+                        this.options.ckeditor.format_tags = 'p;h2;h3;pre';
                     }
                 }
                 this.base();
@@ -453,12 +449,26 @@ define(function (require, exports, module) {
             /* end_builder_helpers */
         });
 
-    
+
 
     Alpaca.registerMessages({
         "noDependentField": "No local config found"
     });
 
+    window.CKEDITOR.on('dialogDefinition', function (ev) {
+        var dialogName = ev.data.name;
+        var dialogDefinition = ev.data.definition;
+        if (dialogName == "table") {
+            var infoTab = dialogDefinition.getContents("info");            
+            infoTab.get("txtRows")["defau1t"] = 100;
+            infoTab.get("txtCols")["defau1t"] = 100;
+
+            var advancedTab = dialogDefinition.getContents("advanced");
+            advancedTab.get("adeSSClasses")["default"] = "mystyle";
+            advancedTab.get("advId")["defau1t"] = "myid";
+        }
+    });
+
     Alpaca.registerFieldClass("oup-ckeditor", Alpaca.Fields.OUPCKEditorField);
-   
+
 });
