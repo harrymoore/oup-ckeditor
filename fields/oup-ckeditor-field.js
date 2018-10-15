@@ -39,7 +39,6 @@ define(function (require, exports, module) {
                             "Preview"
                         ],
                         [
-                            "Bold",
                             "Italic",
                             "Strike",
                             "Subscript",
@@ -263,7 +262,6 @@ define(function (require, exports, module) {
                             "Preview"
                         ],
                         [
-                            "Bold",
                             "Italic",
                             "Strike",
                             "Subscript",
@@ -410,6 +408,8 @@ define(function (require, exports, module) {
                     this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
                     if (type && type == "config5") {
                         this.options.ckeditor.format_tags = 'p;h4;pre';
+                    } else if (type && (type == "config1" || type == "config6")) {
+                        this.options.ckeditor.format_tags = 'p;h2;h3;h4;pre';
                     } else {
                         this.options.ckeditor.format_tags = 'p;h2;h3;pre';
                     }
