@@ -217,6 +217,8 @@ define(function (require, exports, module) {
                     ]
                 },
                 "config5": {
+                    "height": 100,
+                    "width": "50%",
                     "toolbar": [
                         [
                             "Format",
