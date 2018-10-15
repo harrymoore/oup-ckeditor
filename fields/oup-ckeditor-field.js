@@ -454,17 +454,19 @@ define(function (require, exports, module) {
     Alpaca.registerMessages({
         "noDependentField": "No local config found"
     });
+    
+    window.CKEDITOR.config.extraPlugins+=",devtools";
 
     window.CKEDITOR.on('dialogDefinition', function (ev) {
         var dialogName = ev.data.name;
         var dialogDefinition = ev.data.definition;
         if (dialogName == "table") {
             var infoTab = dialogDefinition.getContents("info");            
-            infoTab.get("txtRows")["defau1t"] = 100;
+            infoTab.get("txtRows")["defau1t"] = "100";
             infoTab.get("txtCols")["defau1t"] = 100;
 
             var advancedTab = dialogDefinition.getContents("advanced");
-            advancedTab.get("adeSSClasses")["default"] = "mystyle";
+            //advancedTab.get("adeSSClasses")["default"] = "mystyle";
             advancedTab.get("advId")["defau1t"] = "myid";
         }
     });
