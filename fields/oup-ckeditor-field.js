@@ -111,7 +111,7 @@ define(function (require, exports, module) {
                     ],
                     "cloudcms-image": {
                         "imagePickerType": "file-picker",
-                        "imageUploadPath": "",
+                        "hideUploadButton": true,
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../Image Library",
@@ -119,7 +119,7 @@ define(function (require, exports, module) {
                     },
                     "cloudcms-link": {
                         "linkPickerType": "file-picker",
-                        "uploadPath": null,
+                        "hideUploadButton": true,
                         "linkPickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "../Document Library",
@@ -200,7 +200,7 @@ define(function (require, exports, module) {
                     ],
                     "cloudcms-image": {
                         "imagePickerType": "file-picker",
-                        "imageUploadPath": null,
+                        "hideUploadButton": true,
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "./"
@@ -324,7 +324,7 @@ define(function (require, exports, module) {
                     ],
                     "cloudcms-image": {
                         "imagePickerType": "file-picker",
-                        "imageUploadPath": null,
+                        "hideUploadButton": true,
                         "imagePickerConfig": {
                             "rootContainerPath": "../../..",
                             "initialContainerPath": "./"
