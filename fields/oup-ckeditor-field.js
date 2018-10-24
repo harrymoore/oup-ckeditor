@@ -217,7 +217,6 @@ define(function (require, exports, module) {
                 },
                 "config5": {
                     "height": 100,
-                    "width": "50%",
                     "toolbar": [
                         [
                             "Format",
@@ -457,7 +456,7 @@ define(function (require, exports, module) {
         "noDependentField": "No local config found"
     });
     
-    window.CKEDITOR.config.extraPlugins+=",devtools";
+    //window.CKEDITOR.config.extraPlugins+=",devtools";
 
     window.CKEDITOR.on('dialogDefinition', function (ev) {
         var dialogName = ev.data.name;
