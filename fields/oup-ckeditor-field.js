@@ -464,9 +464,9 @@ define(function (require, exports, module) {
         var dialogDefinition = ev.data.definition;
         if (dialogName == "table") {
             var infoTab = dialogDefinition.getContents("info");            
-            infoTab.get("txtWidth")["default"] = 400;
-            infoTab.get("txtCellSpace")["default"] = 2;
-            infoTab.get("txtCellPad")["default"] = 2;
+            infoTab.get("txtWidth")["default"] = "";
+            infoTab.get("txtCellSpace")["default"] = "";
+            infoTab.get("txtCellPad")["default"] = "";
             
             infoTab.get("selHeaders")["items"].pop();
             infoTab.get("selHeaders")["items"].pop();
