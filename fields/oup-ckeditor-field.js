@@ -136,6 +136,7 @@ define(function (require, exports, module) {
                     ]
                 },
                 "config3": {
+                    "height": 50,
                     "toolbar": [
                         [
                             "Cut",
