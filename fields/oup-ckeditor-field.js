@@ -457,17 +457,19 @@ define(function (require, exports, module) {
         "noDependentField": "No local config found"
     });
     
-    // window.CKEDITOR.config.extraPlugins+=",devtools";, For development purposes
+    window.CKEDITOR.config.extraPlugins+=",devtools";
 
     window.CKEDITOR.on('dialogDefinition', function (ev) {
         var dialogName = ev.data.name;
         var dialogDefinition = ev.data.definition;
+        ev.editor.getCommand( 'table' ).allowedContent = "table{width,height}[align,border,cellpadding,cellspacing,summary];caption tbody thead tfoot;th td tr;table[id,dir](*){*}";
         if (dialogName == "table") {
             var infoTab = dialogDefinition.getContents("info");            
             infoTab.get("txtWidth")["default"] = "";
             infoTab.get("txtCellSpace")["default"] = "";
             infoTab.get("txtCellPad")["default"] = "";
-            
+            infoTab.get("txtBorder")["default"] = "";
+
             infoTab.get("selHeaders")["items"].pop();
             infoTab.get("selHeaders")["items"].pop();
 
