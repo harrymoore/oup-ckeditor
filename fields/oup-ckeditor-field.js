@@ -126,6 +126,7 @@ define(function (require, exports, module) {
                     }
                 },
                 "config2": {
+                    "height": 50,
                     "toolbar": [
                         [
                             "SpecialChar",
@@ -136,7 +137,7 @@ define(function (require, exports, module) {
                     ]
                 },
                 "config3": {
-                    "height": 50,
+                    "height": 100,
                     "toolbar": [
                         [
                             "Cut",
@@ -151,7 +152,6 @@ define(function (require, exports, module) {
                             "Unlink"
                         ],
                         [
-                            "Bold",
                             "Italic",
                             "BulletedList",
                             "Strike",
@@ -331,6 +331,7 @@ define(function (require, exports, module) {
                     }
                 },
                 "config7": {
+                    "height": 100,
                     "toolbar": [
                         [
                             "Cut",
@@ -345,7 +346,6 @@ define(function (require, exports, module) {
                             "Unlink"
                         ],
                         [
-                            "Bold",
                             "Italic",
                             "BulletedList",
                             "Strike",
