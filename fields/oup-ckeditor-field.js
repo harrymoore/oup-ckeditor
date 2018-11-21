@@ -1,8 +1,8 @@
 define(function (require, exports, module) {
 
     var $ = require("jquery");
-
-    var Alpaca = $.alpaca;
+    var Alpaca = require("alpaca");
+    var OneTeam = require("oneteam");
 
     Alpaca.Fields.OUPCKEditorField = Alpaca.Fields.CKEditorField.extend(
         /**
@@ -403,6 +403,7 @@ define(function (require, exports, module) {
              * @see Alpaca.Fields.TextField#setup
              */
             setup: function () {
+
                 if (this.options.ckeditor && this.toolbarOptions[this.options.ckeditor]) {
                     var type = this.options.ckeditor;
                     this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
@@ -414,7 +415,49 @@ define(function (require, exports, module) {
                         this.options.ckeditor.format_tags = 'p;h2;h3;pre';
                     }
                 }
+
+                // TODO: REMOVE BUTTON BASED ON USER TEAM
+                if (this.isUserInTeam("academic-editors"))
+                {
+                    this.options.ckeditor.removeButtons = 'Source';
+                }
+                
+
                 this.base();
+            },
+
+            /**
+             * Check if user has role
+             * @param {string} role 
+             */
+            isUserInTeam: function(role)
+            {
+                var self = this;
+                var observableHolder = self.top().options.observableHolder;
+
+                var teamKeys = [];
+
+                var project = observableHolder.observable("project").get();
+                if (project)
+                {
+                    teamKeys = observableHolder.observable("projectUserTeamKeys").get();
+                }
+                else
+                {
+                    teamKeys = observableHolder.observable("oneteamUserTeamKeys").get();
+                }
+    
+                if (!teamKeys)
+                {
+                    return false;
+                }
+    
+                var x = teamKeys.indexOf(role);
+                if (x > -1) {
+                    return true;
+                }
+    
+                return false;
             },
 
             afterRenderControl: function (model, callback) {
