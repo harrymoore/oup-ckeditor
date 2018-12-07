@@ -4,6 +4,8 @@ define(function (require, exports, module) {
     var Alpaca = require("alpaca");
     var OneTeam = require("oneteam");
 
+    window.CKEDITOR.config.disableNativeSpellChecker = false;
+
     Alpaca.Fields.OUPCKEditorField = Alpaca.Fields.CKEditorField.extend(
         /**
          * @lends Alpaca.Fields.OUPCKEditorField.prototype
