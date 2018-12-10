@@ -231,7 +231,8 @@ define(function (require, exports, module) {
                             "Link",
                             "Unlink",
                             "-",
-                            "ShowBlocks"
+                            "ShowBlocks",
+                            "Styles"
                         ]
                     ],
                     "removeButtons": null,
