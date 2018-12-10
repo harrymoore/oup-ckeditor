@@ -234,7 +234,14 @@ define(function (require, exports, module) {
                             "ShowBlocks"
                         ]
                     ],
-                    "removeButtons": null
+                    "removeButtons": null,
+                    "stylesSet": [{
+                        "name": "callToAction",
+                        "element": "p",
+                        "attributes": {
+                            "class": "callToAction"
+                        }
+                    }]
                 },
                 "config6": {
                     "toolbar": [
