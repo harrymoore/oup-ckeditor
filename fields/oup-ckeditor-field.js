@@ -18,7 +18,6 @@ define(function (require, exports, module) {
                             "Cut",
                             "Copy",
                             "Paste",
-                            "PasteFromWord",
                             "-",
                             "Undo",
                             "Redo"
@@ -26,7 +25,8 @@ define(function (require, exports, module) {
                         [
                             "Link",
                             "Unlink",
-                            "Anchor"
+                            "Anchor",
+                            "cloudcms-link"
                         ],
                         [
                             "Table",
@@ -69,9 +69,6 @@ define(function (require, exports, module) {
                         ],
                         [
                             "cloudcms-iframe"
-                        ],
-                        [
-                            "cloudcms-link"
                         ]
                     ],
                     "removeButtons": null,
