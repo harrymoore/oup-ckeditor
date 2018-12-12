@@ -500,7 +500,46 @@ define(function (require, exports, module) {
             /* end_builder_helpers */
         });
 
+    Alpaca.Fields.TextField = Alpaca.ControlField.extend({
+        updateMaxLengthIndicator: function()
+        {
+            var self = this;
 
+            var errState = false;
+
+            var message = "";
+            if (!Alpaca.isEmpty(self.schema.maxLength) && self.options.showMaxLengthIndicator)
+            {
+                var val = self.getValue() || "";
+
+                var diff = self.schema.maxLength - val.length;
+                if (diff >= 0)
+                {
+                    message = "You have a maximum limit of " + diff + " characters remaining";
+                }
+                else
+                {
+                    message = "Your message is too long by " + (diff*-1) + " characters";
+                    errState = true;
+                }
+
+                var indicator = $(self.field).find(".alpaca-field-text-max-length-indicator");
+                if (indicator.length === 0)
+                {
+                    indicator = $("<p class='alpaca-field-text-max-length-indicator'></p>");
+                    $(self.control).after(indicator);
+                }
+
+                $(indicator).html(message);
+                $(indicator).removeClass("err");
+                if (errState)
+                {
+                    $(indicator).addClass("err");
+                }
+            }
+
+        }
+    });
 
     Alpaca.registerMessages({
         "noDependentField": "No local config found"
