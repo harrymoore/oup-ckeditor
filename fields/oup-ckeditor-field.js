@@ -395,6 +395,26 @@ define(function (require, exports, module) {
                             }
                         }
                     ]
+                },
+                "config8": {
+                    "toolbar": [
+                        [
+                            "Format"
+                        ],
+                        [
+                            "SpecialChar",
+                            "Subscript",
+                            "Superscript"
+                        ],
+                        [
+                            "Link",
+                            "Unlink"
+                        ],
+                        [
+                            "cloudcms-iframe"
+                        ]
+                    ],
+                    "removeButtons": null
                 }
             },
 
