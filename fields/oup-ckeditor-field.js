@@ -30,7 +30,6 @@ define(function (require, exports, module) {
                         ],
                         [
                             "Table",
-                            "HorizontalRule",
                             "SpecialChar"
                         ],
                         [
@@ -53,12 +52,7 @@ define(function (require, exports, module) {
                             "-",
                             "Outdent",
                             "Indent",
-                            "Blockquote",
-                            "-",
-                            "JustifyLeft",
-                            "JustifyCenter",
-                            "JustifyRight",
-                            "JustifyBlock"
+                            "Blockquote"
                         ],
                         [
                             "Format",
