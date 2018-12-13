@@ -389,6 +389,35 @@ define(function (require, exports, module) {
                             }
                         }
                     ]
+                },
+                "config8": {
+                    "toolbar": [
+                        [
+                            "Format"
+                        ],
+                        [
+                            "SpecialChar",
+                            "Subscript",
+                            "Superscript"
+                        ],
+                        [
+                            "Link",
+                            "Unlink"
+                        ],
+                        [
+                            "cloudcms-image"
+                        ]
+                    ],
+                    "removeButtons": null,
+                    "cloudcms-image": {
+                        "imagePickerType": "file-picker",
+                        "hideUploadButton": true,
+                        "imagePickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "./"
+                        },
+                        "uploadPath": null
+                    }
                 }
             },
 
@@ -409,7 +438,7 @@ define(function (require, exports, module) {
                     this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
                     if (type && type == "config5") {
                         this.options.ckeditor.format_tags = 'p;h4;pre';
-                    } else if (type && (type == "config1" || type == "config6")) {
+                    } else if (type && (type == "config1" || type == "config6" || type == "config8")) {
                         this.options.ckeditor.format_tags = 'p;h2;h3;h4;pre';
                     } else {
                         this.options.ckeditor.format_tags = 'p;h2;h3;pre';
