@@ -375,6 +375,13 @@ define(function (require, exports, module) {
                             }
                         },
                         {
+                            "name": "OUP horizontal list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "inline"
+                            }
+                        },
+                        {
                             "name": "OUP floatLeft Image",
                             "element": "img",
                             "attributes": {
