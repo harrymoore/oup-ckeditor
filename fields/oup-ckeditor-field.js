@@ -85,6 +85,13 @@ define(function (require, exports, module) {
                             }
                         },
                         {
+                            "name": "OUP horizontal list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "inline"
+                            }
+                        },
+                        {
                             "name": "OUP floatLeft Image",
                             "element": "img",
                             "attributes": {
@@ -173,6 +180,13 @@ define(function (require, exports, module) {
                             "element": "ul",
                             "attributes": {
                                 "class": "bullet"
+                            }
+                        },
+                        {
+                            "name": "OUP horizontal list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "inline"
                             }
                         },
                         {
@@ -303,6 +317,13 @@ define(function (require, exports, module) {
                             "element": "ul",
                             "attributes": {
                                 "class": "bullet"
+                            }
+                        },
+                        {
+                            "name": "OUP horizontal list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "inline"
                             }
                         },
                         {
