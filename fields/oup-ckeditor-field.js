@@ -465,6 +465,13 @@ define(function (require, exports, module) {
                                 "class": 'callToAction'
                             }
                         };
+                        this.options.ckeditor.format_h4 = {
+                            name: 'Heading 4',
+                            element: 'h4',
+                            "attributes": {
+                                "class": ''
+                            }
+                        };
                     } else if (type && (type == "config1" || type == "config6" || type == "config8")) {
                         this.options.ckeditor.format_tags = 'p;h2;h3;h4;pre';
                     } else {
