@@ -469,9 +469,7 @@ define(function (require, exports, module) {
                         this.options.ckeditor.format_links = {
                             name: 'Call to Action',
                             element: 'p',
-                            styles: {
-                                color: 'callToAction'
-                            }
+                            class: 'callToAction'
                         };
                     } else if (type && (type == "config1" || type == "config6" || type == "config8")) {
                         this.options.ckeditor.format_tags = 'p;h2;h3;h4;pre';
