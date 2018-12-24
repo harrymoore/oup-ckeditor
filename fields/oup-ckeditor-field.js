@@ -236,18 +236,10 @@ define(function (require, exports, module) {
                             "Link",
                             "Unlink",
                             "-",
-                            "ShowBlocks",
-                            "Styles"
+                            "ShowBlocks"
                         ]
                     ],
-                    "removeButtons": null,
-                    "stylesSet": [{
-                        "name": "callToAction",
-                        "element": "p",
-                        "attributes": {
-                            "class": "callToAction"
-                        }
-                    }]
+                    "removeButtons": null
                 },
                 "config6": {
                     "toolbar": [
@@ -467,7 +459,7 @@ define(function (require, exports, module) {
                     if (type && type == "config5") {
                         this.options.ckeditor.format_tags = 'p;h4;pre;links';
                         this.options.ckeditor.format_links = {
-                            name: 'Call to Action',
+                            name: 'callToAction',
                             element: 'p',
                             "attributes": {
                                 "class": 'callToAction'
