@@ -465,7 +465,14 @@ define(function (require, exports, module) {
                     var type = this.options.ckeditor;
                     this.options.ckeditor = this.toolbarOptions[this.options.ckeditor];
                     if (type && type == "config5") {
-                        this.options.ckeditor.format_tags = 'p;h4;pre';
+                        this.options.ckeditor.format_tags = 'p;h4;pre;links';
+                        this.options.ckeditor.format_links = {
+                            name: 'Call to Action',
+                            element: 'p',
+                            styles: {
+                                color: 'callToAction'
+                            }
+                        };
                     } else if (type && (type == "config1" || type == "config6" || type == "config8")) {
                         this.options.ckeditor.format_tags = 'p;h2;h3;h4;pre';
                     } else {
