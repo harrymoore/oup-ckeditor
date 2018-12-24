@@ -466,8 +466,22 @@ define(function (require, exports, module) {
                             }
                         };
                         this.options.ckeditor.format_h4 = {
+                            name: 'Normal',
+                            element: 'p',
+                            "attributes": {
+                                "class": ''
+                            }
+                        };
+                        this.options.ckeditor.format_h4 = {
                             name: 'Heading 4',
                             element: 'h4',
+                            "attributes": {
+                                "class": ''
+                            }
+                        };
+                        this.options.ckeditor.format_pre = {
+                            name: 'Formatted',
+                            element: 'pre',
                             "attributes": {
                                 "class": ''
                             }
