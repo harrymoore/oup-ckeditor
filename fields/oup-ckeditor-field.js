@@ -17,7 +17,7 @@ define(function (require, exports, module) {
                         [
                             "Cut",
                             "Copy",
-                            "Paste",
+                            "PasteText",
                             "-",
                             "Undo",
                             "Redo"
