@@ -577,13 +577,13 @@ define(function (require, exports, module) {
         "noDependentField": "No local config found"
     });
     
-    //window.CKEDITOR.config.extraPlugins+=",devtools";
+    window.CKEDITOR.config.extraPlugins+=",devtools";
 
     window.CKEDITOR.on('dialogDefinition', function (ev) {
         var dialogName = ev.data.name;
         var dialogDefinition = ev.data.definition;
         ev.editor.getCommand( 'table' ).allowedContent = "table{width,height}[align,border,cellpadding,cellspacing,summary];caption tbody thead tfoot;th td tr;table[id,dir](*){*}";
-        if (dialogName == "table") {
+        if (dialogName == "table" && dialogName == "tableProperties") {
             var infoTab = dialogDefinition.getContents("info");            
             infoTab.get("txtWidth")["default"] = "";
             infoTab.get("txtCellSpace")["default"] = "";
