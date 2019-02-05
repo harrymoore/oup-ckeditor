@@ -578,12 +578,17 @@ define(function (require, exports, module) {
     });
     
     window.CKEDITOR.config.extraPlugins+=",devtools";
+    
+    window.CKEDITOR.on('instanceReady', function(ck) { ck.editor.removeMenuItem('image'); });
+    window.CKEDITOR.on('instanceReady', function(ck) { ck.editor.removeMenuItem('table'); });
+    window.CKEDITOR.on('instanceReady', function(ck) { ck.editor.removeMenuItem('tablecell'); });
+   
 
     window.CKEDITOR.on('dialogDefinition', function (ev) {
         var dialogName = ev.data.name;
         var dialogDefinition = ev.data.definition;
         ev.editor.getCommand( 'table' ).allowedContent = "table{width,height}[align,border,cellpadding,cellspacing,summary];caption tbody thead tfoot;th td tr;table[id,dir](*){*}";
-        if (dialogName == "table" && dialogName == "tableProperties") {
+        if (dialogName == "table" || dialogName == "tableProperties") {
             var infoTab = dialogDefinition.getContents("info");            
             infoTab.get("txtWidth")["default"] = "";
             infoTab.get("txtCellSpace")["default"] = "";
@@ -595,6 +600,9 @@ define(function (require, exports, module) {
 
             var advancedTab = dialogDefinition.getContents("advanced");
             advancedTab.get("advCSSClasses")["default"] = "";
+        }
+        if (dialogName == "bulletedListStyle") {
+            dialogDefinition.getContents("info").get("type")["items"].pop();
         }
     });
 
