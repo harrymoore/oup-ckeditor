@@ -78,10 +78,10 @@ define(function (require, exports, module) {
                             }
                         },
                         {
-                            "name": "OUP bulleted list",
+                            "name": "OUP unbulleted list",
                             "element": "ul",
                             "attributes": {
-                                "class": "bullet"
+                                "class": "unbulleted"
                             }
                         },
                         {
@@ -176,10 +176,10 @@ define(function (require, exports, module) {
                             "element": "p"
                         },
                         {
-                            "name": "OUP bulleted list",
+                            "name": "OUP unbulleted list",
                             "element": "ul",
                             "attributes": {
-                                "class": "bullet"
+                                "class": "unbulleted"
                             }
                         },
                         {
@@ -305,10 +305,10 @@ define(function (require, exports, module) {
                             "element": "p"
                         },
                         {
-                            "name": "OUP bulleted list",
+                            "name": "OUP unbulleted list",
                             "element": "ul",
                             "attributes": {
-                                "class": "bullet"
+                                "class": "unbulleted"
                             }
                         },
                         {
@@ -381,10 +381,10 @@ define(function (require, exports, module) {
                             "element": "p"
                         },
                         {
-                            "name": "OUP bulleted list",
+                            "name": "OUP unbulleted list",
                             "element": "ul",
                             "attributes": {
-                                "class": "bullet"
+                                "class": "unbulleted"
                             }
                         },
                         {
