@@ -577,10 +577,10 @@ define(function (require, exports, module) {
         "noDependentField": "No local config found"
     });
     
-    window.CKEDITOR.config.extraPlugins+=",devtools";
+    //window.CKEDITOR.config.extraPlugins+=",devtools";
     
     window.CKEDITOR.on('instanceReady', function(ck) { ck.editor.removeMenuItem('image'); });
-    window.CKEDITOR.on('instanceReady', function(ck) { ck.editor.removeMenuItem('table'); });
+    //window.CKEDITOR.on('instanceReady', function(ck) { ck.editor.removeMenuItem('table'); });
     window.CKEDITOR.on('instanceReady', function(ck) { ck.editor.removeMenuItem('tablecell'); });
    
 
@@ -602,6 +602,7 @@ define(function (require, exports, module) {
             advancedTab.get("advCSSClasses")["default"] = "";
         }
         if (dialogName == "bulletedListStyle") {
+            dialogDefinition.getContents("info").get("type")["items"].pop();
             dialogDefinition.getContents("info").get("type")["items"].pop();
         }
     });
