@@ -28,10 +28,7 @@ CKEDITOR.editorConfig = function (config) {
         [
             "Format",
             "Styles"
-        ],
-        [
-            "cloudcms-image"
-        ],
+        ]
     ];
     config["removeButtons"] = null;
     config["stylesSet"] = [{
@@ -66,14 +63,5 @@ CKEDITOR.editorConfig = function (config) {
                 "class": "floatRight"
             }
         }
-    ];
-    config["cloudcms-image"] = {
-        "imagePickerType": "file-picker",
-        "hideUploadButton": true,
-        "imagePickerConfig": {
-            "rootContainerPath": "../../..",
-            "initialContainerPath": "./"
-        },
-        "uploadPath": null
-    };
+    ]
 }

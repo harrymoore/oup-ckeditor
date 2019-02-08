@@ -1,5 +1,4 @@
 CKEDITOR.editorConfig = function (config) {
-    config["height"] = 100;
     config["toolbar"] = [
         [
             "Cut",
@@ -11,19 +10,40 @@ CKEDITOR.editorConfig = function (config) {
         ],
         [
             "Link",
-            "Unlink"
+            "Unlink",
+            "Anchor"
+        ],
+        [
+            "Table",
+            "HorizontalRule",
+            "SpecialChar"
+        ],
+        [
+            "Maximize",
+            "ShowBlocks",
+            "Source",
+            "Preview"
         ],
         [
             "Italic",
-            "BulletedList",
             "Strike",
             "Subscript",
             "Superscript",
-            "SpecialChar",
             "-",
-            "RemoveFormat",
+            "RemoveFormat"
+        ],
+        [
+            "NumberedList",
+            "BulletedList",
             "-",
-            "ShowBlocks"
+            "Outdent",
+            "Indent",
+            "Blockquote",
+            "-",
+            "JustifyLeft",
+            "JustifyCenter",
+            "JustifyRight",
+            "JustifyBlock"
         ],
         [
             "Format",
@@ -32,6 +52,9 @@ CKEDITOR.editorConfig = function (config) {
         [
             "cloudcms-image"
         ],
+        [
+            "cloudcms-iframe"
+        ]
     ];
     config["removeButtons"] = null;
     config["stylesSet"] = [{

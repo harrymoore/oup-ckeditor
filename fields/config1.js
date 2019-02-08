@@ -1,29 +1,44 @@
 CKEDITOR.editorConfig = function (config) {
-    config["height"] = 100;
     config["toolbar"] = [
         [
             "Cut",
             "Copy",
-            "Paste",
+            "PasteText",
             "-",
             "Undo",
             "Redo"
         ],
         [
             "Link",
-            "Unlink"
+            "Unlink",
+            "Anchor",
+            "cloudcms-link"
+        ],
+        [
+            "Table",
+            "SpecialChar"
+        ],
+        [
+            "Maximize",
+            "ShowBlocks",
+            "Source",
+            "Preview"
         ],
         [
             "Italic",
-            "BulletedList",
             "Strike",
             "Subscript",
             "Superscript",
-            "SpecialChar",
             "-",
-            "RemoveFormat",
+            "RemoveFormat"
+        ],
+        [
+            "NumberedList",
+            "BulletedList",
             "-",
-            "ShowBlocks"
+            "Outdent",
+            "Indent",
+            "Blockquote"
         ],
         [
             "Format",
@@ -32,11 +47,21 @@ CKEDITOR.editorConfig = function (config) {
         [
             "cloudcms-image"
         ],
+        [
+            "cloudcms-iframe"
+        ]
     ];
     config["removeButtons"] = null;
     config["stylesSet"] = [{
             "name": "Paragraph",
             "element": "p"
+        },
+        {
+            "name": "OUP Notice",
+            "element": "div",
+            "attributes": {
+                "class": "notice"
+            }
         },
         {
             "name": "OUP unbulleted list",
@@ -66,14 +91,22 @@ CKEDITOR.editorConfig = function (config) {
                 "class": "floatRight"
             }
         }
+
     ];
     config["cloudcms-image"] = {
         "imagePickerType": "file-picker",
         "hideUploadButton": true,
         "imagePickerConfig": {
             "rootContainerPath": "../../..",
-            "initialContainerPath": "./"
-        },
-        "uploadPath": null
+            "initialContainerPath": "../Image Library",
+        }
+    };
+    config["cloudcms-link"] = {
+        "linkPickerType": "file-picker",
+        "hideUploadButton": true,
+        "linkPickerConfig": {
+            "rootContainerPath": "../../..",
+            "initialContainerPath": "../Document Library",
+        }
     };
 }
