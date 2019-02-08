@@ -447,6 +447,7 @@ define(function (require, exports, module) {
                 "config21": config2,
                 "config3": config3,
                 "config31": config3,
+                "config32": config3,
                 "config4": config4,
                 "config5": config5,
                 "config6": config6,
@@ -527,6 +528,18 @@ define(function (require, exports, module) {
                             countHTML: false,
                             maxWordCount: -1,
                             maxCharCount: 110,
+                        }
+                    }
+
+                    if (type && (type == "config32")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: true,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            maxWordCount: -1,
+                            maxCharCount: 170,
                         }
                     }
 
