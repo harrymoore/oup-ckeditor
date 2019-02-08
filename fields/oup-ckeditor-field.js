@@ -6,6 +6,18 @@ define(function (require, exports, module) {
 
     window.CKEDITOR.config.disableNativeSpellChecker = false;
 
+    let config2 =  {
+        "height": 50,
+        "toolbar": [
+            [
+                "SpecialChar",
+                "Italic",
+                "Subscript",
+                "Superscript"
+            ]
+        ]
+    };
+
     Alpaca.Fields.OUPCKEditorField = Alpaca.Fields.CKEditorField.extend(
         /**
          * @lends Alpaca.Fields.OUPCKEditorField.prototype
@@ -135,17 +147,7 @@ define(function (require, exports, module) {
                         ]
                     ]
                 },
-                "config21": {
-                    "height": 50,
-                    "toolbar": [
-                        [
-                            "SpecialChar",
-                            "Italic",
-                            "Subscript",
-                            "Superscript"
-                        ]
-                    ]
-                },
+                "config21": config2,
                 "config3": {
                     "height": 100,
                     "toolbar": [
