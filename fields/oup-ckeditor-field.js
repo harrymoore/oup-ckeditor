@@ -124,7 +124,9 @@ define(function (require, exports, module) {
                         }
                     }
                 },
-                "config2": './config2.js',
+                "config2": {
+                    'customConfig': './config2.js'
+                },
                 "config3": {
                     "height": 100,
                     "toolbar": [
