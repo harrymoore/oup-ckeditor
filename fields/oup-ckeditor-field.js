@@ -492,15 +492,18 @@ define(function (require, exports, module) {
                         this.options.ckeditor.format_tags = 'p;h2;h3;pre';
                     }
 
-                    // this.options.ckeditor.wordcount = {
-                    //     showParagraphs: true,
-                    //     showWordCount: true,
-                    //     showCharCount: true,
-                    //     countSpacesAsChars: true,
-                    //     countHTML: false,
-                    //     maxWordCount: -1,
-                    //     maxCharCount: 50,
-                    // }
+                    if (type && (type == "config7")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: true,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            maxWordCount: -1,
+                            maxCharCount: 50,
+                        }
+                    }
+
                 }
 
                 // TODO: REMOVE BUTTON BASED ON USER TEAM
@@ -589,17 +592,6 @@ define(function (require, exports, module) {
     //window.CKEDITOR.on('instanceReady', function(ck) { ck.editor.removeMenuItem('table'); });
     window.CKEDITOR.on('instanceReady', function (ck) {
         ck.editor.removeMenuItem('tablecell');
-        window.CKEDITOR.replace('alpaca10', {
-            wordcount: {
-                showParagraphs: true,
-                showWordCount: true,
-                showCharCount: true,
-                countSpacesAsChars: true,
-                countHTML: false,
-                maxWordCount: -1,
-                maxCharCount: 50,
-            }
-        });
     });
 
 
@@ -628,17 +620,4 @@ define(function (require, exports, module) {
 
     Alpaca.registerFieldClass("oup-ckeditor", Alpaca.Fields.OUPCKEditorField);
 
-    $(document).ready(function () {
-        window.CKEDITOR.replace('alpaca10', {
-            wordcount: {
-                showParagraphs: true,
-                showWordCount: true,
-                showCharCount: true,
-                countSpacesAsChars: true,
-                countHTML: false,
-                maxWordCount: -1,
-                maxCharCount: 50,
-            }
-        });
-    });
 });
