@@ -124,17 +124,7 @@ define(function (require, exports, module) {
                         }
                     }
                 },
-                "config2": {
-                    "height": 50,
-                    "toolbar": [
-                        [
-                            "SpecialChar",
-                            "Italic",
-                            "Subscript",
-                            "Superscript"
-                        ]
-                    ]
-                },
+                "config2": './config2.js',
                 "config3": {
                     "height": 100,
                     "toolbar": [
@@ -492,7 +482,18 @@ define(function (require, exports, module) {
                         this.options.ckeditor.format_tags = 'p;h2;h3;pre';
                     }
 
-                    if (type && (type == "config7")) {
+                    if (type && (type == "config2")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: true,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            maxWordCount: -1,
+                            maxCharCount: 50,
+                        }
+                    }
+                    if (type && (type == "config3")) {
                         this.options.ckeditor.wordcount = {
                             showParagraphs: true,
                             showWordCount: true,
