@@ -443,8 +443,28 @@ define(function (require, exports, module) {
         {
             toolbarOptions: {
                 "config1": config1,
-                "config2": config2,
-                "config21": config2,
+                "config2": {
+                    "height": 50,
+                    "toolbar": [
+                        [
+                            "SpecialChar",
+                            "Italic",
+                            "Subscript",
+                            "Superscript"
+                        ]
+                    ]
+                },
+                "config21": {
+                    "height": 50,
+                    "toolbar": [
+                        [
+                            "SpecialChar",
+                            "Italic",
+                            "Subscript",
+                            "Superscript"
+                        ]
+                    ]
+                },
                 "config3": config3,
                 "config31": config3,
                 "config32": config3,
