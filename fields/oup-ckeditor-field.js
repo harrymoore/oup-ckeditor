@@ -3,8 +3,6 @@ define(function (require, exports, module) {
     var $ = require("jquery");
     var Alpaca = require("alpaca");
     var OneTeam = require("oneteam");
-    var moduleId = module.uri.match(/^.+(_modules[^\/]+)\/.*/)[1];
-    var path = "../../../" + moduleId + "/oup-ckeditor/fields/";
 
     window.CKEDITOR.config.disableNativeSpellChecker = false;
 
@@ -15,34 +13,521 @@ define(function (require, exports, module) {
         {
             toolbarOptions: {
                 "config1": {
-                    'customConfig': path + 'config1.js'
+                    "toolbar": [
+                        [
+                            "Cut",
+                            "Copy",
+                            "PasteText",
+                            "-",
+                            "Undo",
+                            "Redo"
+                        ],
+                        [
+                            "Link",
+                            "Unlink",
+                            "Anchor",
+                            "cloudcms-link"
+                        ],
+                        [
+                            "Table",
+                            "SpecialChar"
+                        ],
+                        [
+                            "Maximize",
+                            "ShowBlocks",
+                            "Source",
+                            "Preview"
+                        ],
+                        [
+                            "Italic",
+                            "Strike",
+                            "Subscript",
+                            "Superscript",
+                            "-",
+                            "RemoveFormat"
+                        ],
+                        [
+                            "NumberedList",
+                            "BulletedList",
+                            "-",
+                            "Outdent",
+                            "Indent",
+                            "Blockquote"
+                        ],
+                        [
+                            "Format",
+                            "Styles"
+                        ],
+                        [
+                            "cloudcms-image"
+                        ],
+                        [
+                            "cloudcms-iframe"
+                        ]
+                    ],
+                    "removeButtons": null,
+                    "stylesSet": [{
+                            "name": "Paragraph",
+                            "element": "p"
+                        },
+                        {
+                            "name": "OUP Notice",
+                            "element": "div",
+                            "attributes": {
+                                "class": "notice"
+                            }
+                        },
+                        {
+                            "name": "OUP unbulleted list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "unbulleted"
+                            }
+                        },
+                        {
+                            "name": "OUP horizontal list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "inline"
+                            }
+                        },
+                        {
+                            "name": "OUP floatLeft Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatLeft"
+                            }
+                        },
+                        {
+                            "name": "OUP floatRight Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatRight"
+                            }
+                        }
+
+                    ],
+                    "cloudcms-image": {
+                        "imagePickerType": "file-picker",
+                        "hideUploadButton": true,
+                        "imagePickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "../Image Library",
+                        }
+                    },
+                    "cloudcms-link": {
+                        "linkPickerType": "file-picker",
+                        "hideUploadButton": true,
+                        "linkPickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "../Document Library",
+                        }
+                    }
                 },
                 "config2": {
-                    'customConfig': path + 'config2.js'
+                    "height": 50,
+                    "toolbar": [
+                        [
+                            "SpecialChar",
+                            "Italic",
+                            "Subscript",
+                            "Superscript"
+                        ]
+                    ]
                 },
                 "config21": {
-                    'customConfig': path + 'config2.js'
+                    "height": 50,
+                    "toolbar": [
+                        [
+                            "SpecialChar",
+                            "Italic",
+                            "Subscript",
+                            "Superscript"
+                        ]
+                    ]
                 },
                 "config3": {
-                    'customConfig': path + 'config3.js'
+                    "height": 100,
+                    "toolbar": [
+                        [
+                            "Cut",
+                            "Copy",
+                            "Paste",
+                            "-",
+                            "Undo",
+                            "Redo"
+                        ],
+                        [
+                            "Link",
+                            "Unlink"
+                        ],
+                        [
+                            "Italic",
+                            "BulletedList",
+                            "Strike",
+                            "Subscript",
+                            "Superscript",
+                            "SpecialChar",
+                            "-",
+                            "RemoveFormat",
+                            "-",
+                            "ShowBlocks"
+                        ],
+                        [
+                            "Format",
+                            "Styles"
+                        ],
+                        [
+                            "cloudcms-image"
+                        ],
+                    ],
+                    "removeButtons": null,
+                    "stylesSet": [{
+                            "name": "Paragraph",
+                            "element": "p"
+                        },
+                        {
+                            "name": "OUP unbulleted list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "unbulleted"
+                            }
+                        },
+                        {
+                            "name": "OUP horizontal list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "inline"
+                            }
+                        },
+                        {
+                            "name": "OUP floatLeft Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatLeft"
+                            }
+                        },
+                        {
+                            "name": "OUP floatRight Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatRight"
+                            }
+                        }
+                    ],
+                    "cloudcms-image": {
+                        "imagePickerType": "file-picker",
+                        "hideUploadButton": true,
+                        "imagePickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "./"
+                        },
+                        "uploadPath": null
+                    }
                 },
                 "config31": {
-                    'customConfig': path + 'config3.js'
+                    "height": 100,
+                    "toolbar": [
+                        [
+                            "Cut",
+                            "Copy",
+                            "Paste",
+                            "-",
+                            "Undo",
+                            "Redo"
+                        ],
+                        [
+                            "Link",
+                            "Unlink"
+                        ],
+                        [
+                            "Italic",
+                            "BulletedList",
+                            "Strike",
+                            "Subscript",
+                            "Superscript",
+                            "SpecialChar",
+                            "-",
+                            "RemoveFormat",
+                            "-",
+                            "ShowBlocks"
+                        ],
+                        [
+                            "Format",
+                            "Styles"
+                        ],
+                        [
+                            "cloudcms-image"
+                        ],
+                    ],
+                    "removeButtons": null,
+                    "stylesSet": [{
+                            "name": "Paragraph",
+                            "element": "p"
+                        },
+                        {
+                            "name": "OUP unbulleted list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "unbulleted"
+                            }
+                        },
+                        {
+                            "name": "OUP horizontal list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "inline"
+                            }
+                        },
+                        {
+                            "name": "OUP floatLeft Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatLeft"
+                            }
+                        },
+                        {
+                            "name": "OUP floatRight Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatRight"
+                            }
+                        }
+                    ],
+                    "cloudcms-image": {
+                        "imagePickerType": "file-picker",
+                        "hideUploadButton": true,
+                        "imagePickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "./"
+                        },
+                        "uploadPath": null
+                    }
                 },
                 "config4": {
-                    'customConfig': path + 'config4.js'
+                    "toolbar": [
+                        [
+                            "Link",
+                            "Unlink"
+                        ]
+                    ]
                 },
                 "config5": {
-                    'customConfig': path + 'config5.js'
+                    "height": 100,
+                    "toolbar": [
+                        [
+                            "Format",
+                            "-",
+                            "Italic",
+                            "SpecialChar",
+                            "Subscript",
+                            "Superscript",
+                            "-",
+                            "Link",
+                            "Unlink",
+                            "-",
+                            "ShowBlocks"
+                        ]
+                    ],
+                    "removeButtons": null
                 },
                 "config6": {
-                    'customConfig': path + 'config6.js'
+                    "toolbar": [
+                        [
+                            "Cut",
+                            "Copy",
+                            "Paste",
+                            "-",
+                            "Undo",
+                            "Redo"
+                        ],
+                        [
+                            "Link",
+                            "Unlink",
+                            "Anchor"
+                        ],
+                        [
+                            "Table",
+                            "HorizontalRule",
+                            "SpecialChar"
+                        ],
+                        [
+                            "Maximize",
+                            "ShowBlocks",
+                            "Source",
+                            "Preview"
+                        ],
+                        [
+                            "Italic",
+                            "Strike",
+                            "Subscript",
+                            "Superscript",
+                            "-",
+                            "RemoveFormat"
+                        ],
+                        [
+                            "NumberedList",
+                            "BulletedList",
+                            "-",
+                            "Outdent",
+                            "Indent",
+                            "Blockquote",
+                            "-",
+                            "JustifyLeft",
+                            "JustifyCenter",
+                            "JustifyRight",
+                            "JustifyBlock"
+                        ],
+                        [
+                            "Format",
+                            "Styles"
+                        ],
+                        [
+                            "cloudcms-image"
+                        ],
+                        [
+                            "cloudcms-iframe"
+                        ]
+                    ],
+                    "removeButtons": null,
+                    "stylesSet": [{
+                            "name": "Paragraph",
+                            "element": "p"
+                        },
+                        {
+                            "name": "OUP unbulleted list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "unbulleted"
+                            }
+                        },
+                        {
+                            "name": "OUP horizontal list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "inline"
+                            }
+                        },
+                        {
+                            "name": "OUP floatLeft Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatLeft"
+                            }
+                        },
+                        {
+                            "name": "OUP floatRight Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatRight"
+                            }
+                        }
+                    ],
+                    "cloudcms-image": {
+                        "imagePickerType": "file-picker",
+                        "hideUploadButton": true,
+                        "imagePickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "./"
+                        },
+                        "uploadPath": null
+                    }
                 },
                 "config7": {
-                    'customConfig': path + 'config7.js'
+                    "height": 100,
+                    "toolbar": [
+                        [
+                            "Cut",
+                            "Copy",
+                            "Paste",
+                            "-",
+                            "Undo",
+                            "Redo"
+                        ],
+                        [
+                            "Link",
+                            "Unlink"
+                        ],
+                        [
+                            "Italic",
+                            "BulletedList",
+                            "Strike",
+                            "Subscript",
+                            "Superscript",
+                            "SpecialChar",
+                            "-",
+                            "RemoveFormat",
+                            "-",
+                            "ShowBlocks"
+                        ],
+                        [
+                            "Format",
+                            "Styles"
+                        ]
+                    ],
+                    "removeButtons": null,
+                    "stylesSet": [{
+                            "name": "Paragraph",
+                            "element": "p"
+                        },
+                        {
+                            "name": "OUP unbulleted list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "unbulleted"
+                            }
+                        },
+                        {
+                            "name": "OUP horizontal list",
+                            "element": "ul",
+                            "attributes": {
+                                "class": "inline"
+                            }
+                        },
+                        {
+                            "name": "OUP floatLeft Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatLeft"
+                            }
+                        },
+                        {
+                            "name": "OUP floatRight Image",
+                            "element": "img",
+                            "attributes": {
+                                "class": "floatRight"
+                            }
+                        }
+                    ]
                 },
                 "config8": {
-                    'customConfig': path + 'config8.js'
+                    "toolbar": [
+                        [
+                            "Format"
+                        ],
+                        [
+                            "SpecialChar",
+                            "Subscript",
+                            "Superscript"
+                        ],
+                        [
+                            "Link",
+                            "Unlink"
+                        ],
+                        [
+                            "cloudcms-image"
+                        ]
+                    ],
+                    "removeButtons": null,
+                    "cloudcms-image": {
+                        "imagePickerType": "file-picker",
+                        "hideUploadButton": true,
+                        "imagePickerConfig": {
+                            "rootContainerPath": "../../..",
+                            "initialContainerPath": "./"
+                        },
+                        "uploadPath": null
+                    }
                 }
             },
 
@@ -108,9 +593,10 @@ define(function (require, exports, module) {
                             maxCharCount: 50,
                         }
                     }
+
                     if (type && (type == "config31")) {
                         this.options.ckeditor.wordcount = {
-                            showParagraphs: true,
+                            showParagraphs: false,
                             showWordCount: true,
                             showCharCount: true,
                             countSpacesAsChars: true,
