@@ -590,7 +590,7 @@ define(function (require, exports, module) {
                             countSpacesAsChars: true,
                             countHTML: false,
                             maxWordCount: -1,
-                            maxCharCount: 50,
+                            maxCharCount: 40,
                         }
                     }
 
@@ -602,7 +602,7 @@ define(function (require, exports, module) {
                             countSpacesAsChars: true,
                             countHTML: false,
                             maxWordCount: -1,
-                            maxCharCount: 100,
+                            maxCharCount: 110,
                         }
                     }
 
