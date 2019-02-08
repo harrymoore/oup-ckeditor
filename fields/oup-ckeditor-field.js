@@ -490,7 +490,17 @@ define(function (require, exports, module) {
                         this.options.ckeditor.format_tags = 'p;h2;h3;h4;pre';
                     } else {
                         this.options.ckeditor.format_tags = 'p;h2;h3;pre';
-                    }
+                    } 
+
+                    // this.options.ckeditor.wordcount = {
+                    //     showParagraphs: true,
+                    //     showWordCount: true,
+                    //     showCharCount: true,
+                    //     countSpacesAsChars: true,
+                    //     countHTML: false,
+                    //     maxWordCount: -1,
+                    //     maxCharCount: 50,
+                    // }
                 }
 
                 // TODO: REMOVE BUTTON BASED ON USER TEAM
@@ -609,4 +619,19 @@ define(function (require, exports, module) {
 
     Alpaca.registerFieldClass("oup-ckeditor", Alpaca.Fields.OUPCKEditorField);
 
+    $(document).ready(function(){
+        window.CKEDITOR.replace( 'alpaca10',
+        {
+                             wordcount :
+             {
+                        showParagraphs: true,
+                        showWordCount: true,
+                        showCharCount: true,
+                        countSpacesAsChars: true,
+                        countHTML: false,
+                        maxWordCount: -1,
+                        maxCharCount: 50,
+                    }
+    } );
+    });
 });
