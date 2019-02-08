@@ -584,7 +584,7 @@ define(function (require, exports, module) {
 
                     if (type && (type == "config21")) {
                         this.options.ckeditor.wordcount = {
-                            showParagraphs: true,
+                            showParagraphs: false,
                             showWordCount: true,
                             showCharCount: true,
                             countSpacesAsChars: true,
@@ -596,7 +596,7 @@ define(function (require, exports, module) {
 
                     if (type && (type == "config31")) {
                         this.options.ckeditor.wordcount = {
-                            showParagraphs: false,
+                            showParagraphs: true,
                             showWordCount: true,
                             showCharCount: true,
                             countSpacesAsChars: true,
