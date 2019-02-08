@@ -3,6 +3,8 @@ define(function (require, exports, module) {
     var $ = require("jquery");
     var Alpaca = require("alpaca");
     var OneTeam = require("oneteam");
+    var moduleId = module.uri.match(/^.+(_modules[^\/]+)\/.*/)[1];
+    var path = "../../../" + moduleId + "/oup-ckeditor/fields/";
 
     window.CKEDITOR.config.disableNativeSpellChecker = false;
 
@@ -125,7 +127,7 @@ define(function (require, exports, module) {
                     }
                 },
                 "config2": {
-                    'customConfig': './config2.js'
+                    'customConfig': path + 'config2.js'
                 },
                 "config3": {
                     "height": 100,
