@@ -442,17 +442,17 @@ define(function (require, exports, module) {
          */
         {
             toolbarOptions: {
-                "config1": config1,
+                "config1": Object.create(config1),
                 "config2": Object.create(config2),
                 "config21": Object.create(config2),
-                "config3": config3,
-                "config31": config3,
-                "config32": config3,
-                "config4": config4,
-                "config5": config5,
-                "config6": config6,
-                "config7": config7,
-                "config8": config8
+                "config3": Object.create(config3),
+                "config31": Object.create(config3),
+                "config32": Object.create(config3),
+                "config4": Object.create(config4),
+                "config5": Object.create(config5),
+                "config6": Object.create(config6),
+                "config7": Object.create(config7),
+                "config8": Object.create(config8)
                 
             },
 
