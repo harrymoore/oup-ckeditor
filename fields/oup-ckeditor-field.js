@@ -491,27 +491,14 @@ define(function (require, exports, module) {
                     } else {
                         this.options.ckeditor.format_tags = 'p;h2;h3;pre';
                     }
-
-                    if (this.name == "editorsWidgetText") {
-                        window.CKEDITOR.replace(this.id, {
-                            wordcount: {
-                                showParagraphs: true,
-                                showWordCount: true,
-                                showCharCount: true,
-                                countSpacesAsChars: true,
-                                countHTML: false,
-                                maxWordCount: -1,
-                                maxCharCount: 50,
-                            }
-                        });
-                    }
                 }
 
                 // TODO: REMOVE BUTTON BASED ON USER TEAM
-                if (this.isUserInTeam("academic-editors")) {
+                if (this.isUserInTeam("academic-editors"))
+                {
                     this.options.ckeditor.removeButtons = 'Source';
                 }
-
+                
 
                 this.base();
             },
@@ -520,28 +507,33 @@ define(function (require, exports, module) {
              * Check if user has role
              * @param {string} role 
              */
-            isUserInTeam: function (role) {
+            isUserInTeam: function(role)
+            {
                 var self = this;
                 var observableHolder = self.top().options.observableHolder;
 
                 var teamKeys = [];
 
                 var project = observableHolder.observable("project").get();
-                if (project) {
+                if (project)
+                {
                     teamKeys = observableHolder.observable("projectUserTeamKeys").get();
-                } else {
+                }
+                else
+                {
                     teamKeys = observableHolder.observable("oneteamUserTeamKeys").get();
                 }
-
-                if (!teamKeys) {
+    
+                if (!teamKeys)
+                {
                     return false;
                 }
-
+    
                 var x = teamKeys.indexOf(role);
                 if (x > -1) {
                     return true;
                 }
-
+    
                 return false;
             },
 
@@ -584,24 +576,20 @@ define(function (require, exports, module) {
     Alpaca.registerMessages({
         "noDependentField": "No local config found"
     });
-
+    
     //window.CKEDITOR.config.extraPlugins+=",devtools";
-
-    window.CKEDITOR.on('instanceReady', function (ck) {
-        ck.editor.removeMenuItem('image');
-    });
+    
+    window.CKEDITOR.on('instanceReady', function(ck) { ck.editor.removeMenuItem('image'); });
     //window.CKEDITOR.on('instanceReady', function(ck) { ck.editor.removeMenuItem('table'); });
-    window.CKEDITOR.on('instanceReady', function (ck) {
-        ck.editor.removeMenuItem('tablecell');
-    });
-
+    window.CKEDITOR.on('instanceReady', function(ck) { ck.editor.removeMenuItem('tablecell'); });
+   
 
     window.CKEDITOR.on('dialogDefinition', function (ev) {
         var dialogName = ev.data.name;
         var dialogDefinition = ev.data.definition;
-        ev.editor.getCommand('table').allowedContent = "table{width,height}[align,border,cellpadding,cellspacing,summary];caption tbody thead tfoot;th td tr;table[id,dir](*){*}";
+        ev.editor.getCommand( 'table' ).allowedContent = "table{width,height}[align,border,cellpadding,cellspacing,summary];caption tbody thead tfoot;th td tr;table[id,dir](*){*}";
         if (dialogName == "table" || dialogName == "tableProperties") {
-            var infoTab = dialogDefinition.getContents("info");
+            var infoTab = dialogDefinition.getContents("info");            
             infoTab.get("txtWidth")["default"] = "";
             infoTab.get("txtCellSpace")["default"] = "";
             infoTab.get("txtCellPad")["default"] = "";
