@@ -1,7 +1,7 @@
 define(function (require, exports, module) {
 
     var Helper = require("../helper.js");
-
-    Helper.registerPlugin("wordcount");
+    var moduleId = module.uri.match(/^.+(_modules[^\/]+)\/.*/)[1];
+    Helper.registerPlugin("wordcount", moduleId);
 
 });
