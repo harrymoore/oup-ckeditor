@@ -513,66 +513,66 @@ CKEDITOR.plugins.add("wordcount",
                 function(event) {
                     if (config.maxWordCount > 0 || config.maxCharCount > 0 || config.maxParagraphs > 0) {
 
-                        // Check if pasted content is above the limits
-                        var wordCount = -1,
-                            charCount = -1,
-                            paragraphs = -1;
+                        // // Check if pasted content is above the limits
+                        // var wordCount = -1,
+                        //     charCount = -1,
+                        //     paragraphs = -1;
 
-                        // BeforeGetData and getData events are fired when calling
-                        // getData(). We can prevent this by passing true as an
-                        // argument to getData(). This allows us to fire the events
-                        // manually with additional event data: firedBy. This additional
-                        // data helps differentiate calls to getData() made by
-                        // wordCount plugin from calls made by other plugins/code.
-                        event.editor.fire("beforeGetData", { firedBy: "wordCount.onPaste" }, event.editor);
-                        var text = event.editor.getData(true);
-                        event.editor.fire("getData", { dataValue: text, firedBy: "wordCount.onPaste" }, event.editor);
+                        // // BeforeGetData and getData events are fired when calling
+                        // // getData(). We can prevent this by passing true as an
+                        // // argument to getData(). This allows us to fire the events
+                        // // manually with additional event data: firedBy. This additional
+                        // // data helps differentiate calls to getData() made by
+                        // // wordCount plugin from calls made by other plugins/code.
+                        // event.editor.fire("beforeGetData", { firedBy: "wordCount.onPaste" }, event.editor);
+                        // var text = event.editor.getData(true);
+                        // event.editor.fire("getData", { dataValue: text, firedBy: "wordCount.onPaste" }, event.editor);
 
-                        text += event.data.dataValue;
+                        // text += event.data.dataValue;
 
-                        if (config.showCharCount) {
-                            charCount = countCharacters(text);
-                        }
+                        // if (config.showCharCount) {
+                        //     charCount = countCharacters(text);
+                        // }
 
-                        if (config.showWordCount) {
-                            wordCount = countWords(text);
-                        }
+                        // if (config.showWordCount) {
+                        //     wordCount = countWords(text);
+                        // }
 
-                        if (config.showParagraphs) {
-                            paragraphs = countParagraphs(text);
-                        }
+                        // if (config.showParagraphs) {
+                        //     paragraphs = countParagraphs(text);
+                        // }
 
 
-                        // Instantiate the notification when needed and only have one instance
-                        if (notification === null) {
-                            notification = new CKEDITOR.plugins.notification(event.editor,
-                                {
-                                    message: event.editor.lang.wordcount.pasteWarning,
-                                    type: 'warning',
-                                    duration: config.pasteWarningDuration
-                                });
-                        }
+                        // // Instantiate the notification when needed and only have one instance
+                        // if (notification === null) {
+                        //     notification = new CKEDITOR.plugins.notification(event.editor,
+                        //         {
+                        //             message: event.editor.lang.wordcount.pasteWarning,
+                        //             type: 'warning',
+                        //             duration: config.pasteWarningDuration
+                        //         });
+                        // }
 
-                        if (config.maxCharCount > 0 && charCount > config.maxCharCount && config.hardLimit) {
-                            if (!notification.isVisible()) {
-                                notification.show();
-                            }
-                            event.cancel();
-                        }
+                        // if (config.maxCharCount > 0 && charCount > config.maxCharCount && config.hardLimit) {
+                        //     if (!notification.isVisible()) {
+                        //         notification.show();
+                        //     }
+                        //     event.cancel();
+                        // }
 
-                        if (config.maxWordCount > 0 && wordCount > config.maxWordCount && config.hardLimit) {
-                            if (!notification.isVisible()) {
-                                notification.show();
-                            }
-                            event.cancel();
-                        }
+                        // if (config.maxWordCount > 0 && wordCount > config.maxWordCount && config.hardLimit) {
+                        //     if (!notification.isVisible()) {
+                        //         notification.show();
+                        //     }
+                        //     event.cancel();
+                        // }
 
-                        if (config.maxParagraphs > 0 && paragraphs > config.maxParagraphs && config.hardLimit) {
-                            if (!notification.isVisible()) {
-                                notification.show();
-                            }
-                            event.cancel();
-                        }
+                        // if (config.maxParagraphs > 0 && paragraphs > config.maxParagraphs && config.hardLimit) {
+                        //     if (!notification.isVisible()) {
+                        //         notification.show();
+                        //     }
+                        //     event.cancel();
+                        // }
                     }
                 },
                 editor,
