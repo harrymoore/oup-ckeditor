@@ -274,7 +274,7 @@ CKEDITOR.plugins.add("wordcount",
                 limitRestoredNotified = false;
 
                 if (config.hardLimit) {
-                    editorInstance.execCommand('undo');
+                   // editorInstance.execCommand('undo');
                 }
 
                 if (!notify) {
