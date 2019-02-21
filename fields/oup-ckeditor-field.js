@@ -450,6 +450,7 @@ define(function (require, exports, module) {
                 "config32": Object.create(config3),
                 "config4": Object.create(config4),
                 "config5": Object.create(config5),
+                "config51": Object.create(config5),
                 "config6": Object.create(config6),
                 "config7": Object.create(config7),
                 "config8": Object.create(config8)
@@ -521,25 +522,37 @@ define(function (require, exports, module) {
 
                     if (type && (type == "config31")) {
                         this.options.ckeditor.wordcount = {
-                            showParagraphs: true,
+                            showParagraphs: false,
                             showWordCount: true,
                             showCharCount: true,
                             countSpacesAsChars: true,
                             countHTML: false,
-                            maxWordCount: -1,
-                            maxCharCount: 110,
+                            warnOnLimitOnly: true,
+                            maxCharCount: 110
                         }
                     }
 
                     if (type && (type == "config32")) {
                         this.options.ckeditor.wordcount = {
-                            showParagraphs: true,
+                            showParagraphs: false,
                             showWordCount: true,
                             showCharCount: true,
                             countSpacesAsChars: true,
                             countHTML: false,
-                            maxWordCount: -1,
-                            maxCharCount: 170,
+                            warnOnLimitOnly: true,
+                            maxCharCount: 170
+                        }
+                    }
+
+                    if (type && (type == "config51")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: false,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            warnOnLimitOnly: true,
+                            maxCharCount: 400
                         }
                     }
 
