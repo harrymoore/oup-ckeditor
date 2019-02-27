@@ -444,15 +444,20 @@ define(function (require, exports, module) {
             toolbarOptions: {
                 "config1": Object.create(config1),
                 "config2": Object.create(config2),
-                "config21": Object.create(config2),
+                "configMainTitleHP": Object.create(config2),
+                "configHeadCB": Object.create(config2),
+                "configSecTitleHP": Object.create(config2),
                 "config3": Object.create(config3),
-                "config31": Object.create(config3),
-                "config32": Object.create(config3),
+                "configSecDescHP": Object.create(config3),
+                "configMainDescHP": Object.create(config3),
+                "configSnippet": Object.create(config3),
                 "config4": Object.create(config4),
                 "config5": Object.create(config5),
-                "config51": Object.create(config5),
+                "configSpnsrSP": Object.create(config5),
                 "config6": Object.create(config6),
                 "config7": Object.create(config7),
+                "configAbtPnlTxtHP": Object.create(config7),
+                "configTextCB": Object.create(config7),
                 "config8": Object.create(config8)
                 
             },
@@ -508,7 +513,7 @@ define(function (require, exports, module) {
                         this.options.ckeditor.format_tags = 'p;h2;h3;pre';
                     }
 
-                    if (type && (type == "config21")) {
+                    if (type && (type == "configMainTitleHP")) {
                         this.options.ckeditor.wordcount = {
                             showParagraphs: false,
                             showWordCount: true,
@@ -516,11 +521,35 @@ define(function (require, exports, module) {
                             countSpacesAsChars: true,
                             countHTML: false,
                             maxWordCount: -1,
-                            maxCharCount: 40,
+                            maxCharCount: 32,
                         }
                     }
 
-                    if (type && (type == "config31")) {
+                    if (type && (type == "configHeadCB")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: false,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            maxWordCount: -1,
+                            maxCharCount: 150,
+                        }
+                    }
+
+                    if (type && (type == "configSecTitleHP")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: false,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            maxWordCount: -1,
+                            maxCharCount: 36,
+                        }
+                    }
+
+                    if (type && (type == "configSecDescHP")) {
                         this.options.ckeditor.wordcount = {
                             showParagraphs: false,
                             showWordCount: true,
@@ -528,11 +557,11 @@ define(function (require, exports, module) {
                             countSpacesAsChars: true,
                             countHTML: false,
                             warnOnLimitOnly: true,
-                            maxCharCount: 110
+                            maxCharCount: 100
                         }
                     }
 
-                    if (type && (type == "config32")) {
+                    if (type && (type == "configMainDescHP")) {
                         this.options.ckeditor.wordcount = {
                             showParagraphs: false,
                             showWordCount: true,
@@ -540,11 +569,23 @@ define(function (require, exports, module) {
                             countSpacesAsChars: true,
                             countHTML: false,
                             warnOnLimitOnly: true,
-                            maxCharCount: 170
+                            maxCharCount: 150
                         }
                     }
 
-                    if (type && (type == "config51")) {
+                    if (type && (type == "configSnippet")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: false,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            warnOnLimitOnly: true,
+                            maxCharCount: 325
+                        }
+                    }
+
+                    if (type && (type == "configSpnsrSP")) {
                         this.options.ckeditor.wordcount = {
                             showParagraphs: false,
                             showWordCount: true,
@@ -553,6 +594,30 @@ define(function (require, exports, module) {
                             countHTML: false,
                             warnOnLimitOnly: true,
                             maxCharCount: 400
+                        }
+                    }
+
+                    if (type && (type == "configAbtPnlTxtHP")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: false,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            warnOnLimitOnly: true,
+                            maxCharCount: 210
+                        }
+                    }
+
+                    if (type && (type == "configTextCB")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: false,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            warnOnLimitOnly: true,
+                            maxCharCount: 450
                         }
                     }
 
