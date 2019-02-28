@@ -444,6 +444,8 @@ define(function (require, exports, module) {
             toolbarOptions: {
                 "config1": Object.create(config1),
                 "config2": Object.create(config2),
+                "configAbtPnlHead": Object.create(config2),
+                "configAbtPnlLinkText": Object.create(config2),
                 "configMainTitleHP": Object.create(config2),
                 "configHeadCB": Object.create(config2),
                 "configSecTitleHP": Object.create(config2),
@@ -523,6 +525,32 @@ define(function (require, exports, module) {
                             maxWordCount: -1,
                             maxCharCount: 32,
                         }
+                    }
+
+                    if (type && (type == "configAbtPnlHead")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: false,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            maxWordCount: -1,
+                            maxCharCount: 35,
+                        }
+                        this.options.ckeditor.autoParagraph = false;
+                    }
+
+                    if (type && (type == "configAbtPnlLinkText")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: false,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            maxWordCount: -1,
+                            maxCharCount: 35,
+                        }
+                        this.options.ckeditor.autoParagraph = false;
                     }
 
                     if (type && (type == "configHeadCB")) {
