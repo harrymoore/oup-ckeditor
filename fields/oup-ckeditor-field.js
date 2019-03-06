@@ -522,7 +522,7 @@ define(function (require, exports, module) {
                             showCharCount: true,
                             countSpacesAsChars: true,
                             countHTML: false,
-                            maxWordCount: -1,
+                            warnOnLimitOnly: true,
                             maxCharCount: 32,
                         }
                     }
@@ -534,7 +534,7 @@ define(function (require, exports, module) {
                             showCharCount: true,
                             countSpacesAsChars: true,
                             countHTML: false,
-                            maxWordCount: -1,
+                            warnOnLimitOnly: true,
                             maxCharCount: 35,
                         }
                         this.options.ckeditor.autoParagraph = false;
@@ -547,7 +547,7 @@ define(function (require, exports, module) {
                             showCharCount: true,
                             countSpacesAsChars: true,
                             countHTML: false,
-                            maxWordCount: -1,
+                            warnOnLimitOnly: true,
                             maxCharCount: 35,
                         }
                         this.options.ckeditor.autoParagraph = false;
@@ -560,7 +560,7 @@ define(function (require, exports, module) {
                             showCharCount: true,
                             countSpacesAsChars: true,
                             countHTML: false,
-                            maxWordCount: -1,
+                            warnOnLimitOnly: true,
                             maxCharCount: 150,
                         }
                     }
@@ -572,7 +572,7 @@ define(function (require, exports, module) {
                             showCharCount: true,
                             countSpacesAsChars: true,
                             countHTML: false,
-                            maxWordCount: -1,
+                            warnOnLimitOnly: true,
                             maxCharCount: 36,
                         }
                     }
@@ -636,6 +636,7 @@ define(function (require, exports, module) {
                             warnOnLimitOnly: true,
                             maxCharCount: 210
                         }
+                        this.options.ckeditor.autoParagraph = false;
                     }
 
                     if (type && (type == "configTextCB")) {
