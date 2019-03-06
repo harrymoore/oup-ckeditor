@@ -538,6 +538,7 @@ define(function (require, exports, module) {
                             maxCharCount: 35,
                         }
                         this.options.ckeditor.autoParagraph = false;
+                        this.options.ckeditor.enterMode = window.CKEDITOR.ENTER_BR ;
                     }
 
                     if (type && (type == "configAbtPnlLinkText")) {
@@ -551,6 +552,7 @@ define(function (require, exports, module) {
                             maxCharCount: 35,
                         }
                         this.options.ckeditor.autoParagraph = false;
+                        this.options.ckeditor.enterMode = window.CKEDITOR.ENTER_BR ;
                     }
 
                     if (type && (type == "configHeadCB")) {
@@ -636,7 +638,6 @@ define(function (require, exports, module) {
                             warnOnLimitOnly: true,
                             maxCharCount: 210
                         }
-                        this.options.ckeditor.autoParagraph = false;
                     }
 
                     if (type && (type == "configTextCB")) {
