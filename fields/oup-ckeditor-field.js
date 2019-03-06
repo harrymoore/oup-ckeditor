@@ -611,7 +611,7 @@ define(function (require, exports, module) {
                             warnOnLimitOnly: true,
                             maxCharCount: 325
                         }
-                        this.options.ckeditor.height = "100";
+                        this.options.ckeditor.height = "120";
                     }
 
                     if (type && (type == "configSpnsrSP")) {
