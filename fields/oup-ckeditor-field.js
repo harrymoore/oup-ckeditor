@@ -764,6 +764,11 @@ define(function (require, exports, module) {
             dialogDefinition.getContents("info").get("type")["items"].pop();
             dialogDefinition.getContents("info").get("type")["items"].pop();
         }
+        if (dialogName == "image") {
+            dialogDefinition.getContents("info").elements.pop();
+            dialogDefinition.getContents("info").elements.pop();
+            dialogDefinition.contents.pop();
+        }
     });
 
     Alpaca.registerFieldClass("oup-ckeditor", Alpaca.Fields.OUPCKEditorField);
