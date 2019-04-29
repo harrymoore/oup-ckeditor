@@ -5,7 +5,7 @@ define(function (require, exports, module) {
     var OneTeam = require("oneteam");
 
     window.CKEDITOR.config.disableNativeSpellChecker = false;
-
+    window.CKEDITOR.config.forcePasteAsPlainText = true;
 
     let config1 = {
         "toolbar": [
