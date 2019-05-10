@@ -126,7 +126,9 @@ define(function (require, exports, module) {
                 "SpecialChar",
                 "Italic",
                 "Subscript",
-                "Superscript"
+                "Superscript",
+                "-",
+                "RemoveFormat"
             ]
         ]
     };
@@ -228,6 +230,8 @@ define(function (require, exports, module) {
                 "SpecialChar",
                 "Subscript",
                 "Superscript",
+                "-",
+                "RemoveFormat",
                 "-",
                 "Link",
                 "Unlink",
@@ -414,7 +418,9 @@ define(function (require, exports, module) {
             [
                 "SpecialChar",
                 "Subscript",
-                "Superscript"
+                "Superscript",
+                "-",
+                "RemoveFormat",
             ],
             [
                 "Link",
