@@ -755,16 +755,15 @@ define(function (require, exports, module) {
         ev.editor.getCommand('table').allowedContent = "table{width,height}[align,border,cellpadding,cellspacing,summary];caption tbody thead tfoot;th td tr;table[id,dir](*){*}";
         if (dialogName == "table" || dialogName == "tableProperties") {
             var infoTab = dialogDefinition.getContents("info");
-            infoTab.get("txtWidth")["default"] = "";
-            infoTab.get("txtCellSpace")["default"] = "";
-            infoTab.get("txtCellPad")["default"] = "";
-            infoTab.get("txtBorder")["default"] = "";
+            dialogDefinition.getContents("info").elements.pop();
+            dialogDefinition.getContents("info").elements.pop();
+            dialogDefinition.contents.pop();
+            infoTab.elements[0].children[0].children.pop();
+            infoTab.elements[0].children[0].children.pop();
+            infoTab.elements[0].children.pop();
 
             infoTab.get("selHeaders")["items"].pop();
             infoTab.get("selHeaders")["items"].pop();
-
-            var advancedTab = dialogDefinition.getContents("advanced");
-            advancedTab.get("advCSSClasses")["default"] = "";
         }
         if (dialogName == "bulletedListStyle") {
             dialogDefinition.getContents("info").get("type")["items"].pop();
