@@ -757,7 +757,8 @@ define(function (require, exports, module) {
             var infoTab = dialogDefinition.getContents("info");
             dialogDefinition.getContents("info").elements.pop();
             dialogDefinition.getContents("info").elements.pop();
-            dialogDefinition.contents.pop();
+            dialogDefinition.contents[1].elements[0].children.shift();
+            dialogDefinition.contents[1].elements[0].children[0].children.shift();
             infoTab.elements[0].children[0].children.pop();
             infoTab.elements[0].children[0].children.pop();
             infoTab.elements[0].children.pop();
