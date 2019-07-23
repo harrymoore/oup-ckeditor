@@ -8,7 +8,8 @@ define(function (require, exports, module) {
     window.CKEDITOR.config.forcePasteAsPlainText = true;
 
     let configempty = {
-        "height": 50
+        "height": 50,
+        "toolbar": []
     };
     let config1 = {
         "toolbar": [
