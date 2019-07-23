@@ -7,6 +7,9 @@ define(function (require, exports, module) {
     window.CKEDITOR.config.disableNativeSpellChecker = false;
     window.CKEDITOR.config.forcePasteAsPlainText = true;
 
+    let configempty = {
+        "height": 50
+    };
     let config1 = {
         "toolbar": [
             [
@@ -456,6 +459,7 @@ define(function (require, exports, module) {
                 "configHeadCB": Object.create(config2),
                 "configSecTitleHP": Object.create(config2),
                 "configSnippet": Object.create(config2),
+                "configSnippetPodHP": Object.create(configempty),
                 "config3": Object.create(config3),
                 "configSecDescHP": Object.create(config3),
                 "configMainDescHP": Object.create(config3),
@@ -620,6 +624,21 @@ define(function (require, exports, module) {
                             maxCharCount: 325
                         }
                         this.options.ckeditor.height = "100";
+                    }
+
+                    if (type && (type == "configSnippetPodHP")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: false,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            warnOnLimitOnly: true,
+                            maxCharCount: 250
+                        }
+                        this.options.ckeditor.height = "100";
+                        this.options.ckeditor.autoParagraph = false;
+                        this.options.ckeditor.enterMode = window.CKEDITOR.ENTER_BR ;
                     }
 
                     if (type && (type == "configSpnsrSP")) {
