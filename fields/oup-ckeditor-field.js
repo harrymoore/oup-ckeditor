@@ -461,6 +461,7 @@ define(function (require, exports, module) {
                 "configSecTitleHP": Object.create(config2),
                 "configSnippet": Object.create(config2),
                 "configSnippetPodHP": Object.create(configempty),
+                "configSnippetPodHP2": Object.create(config2),
                 "config3": Object.create(config3),
                 "configSecDescHP": Object.create(config3),
                 "configMainDescHP": Object.create(config3),
@@ -628,6 +629,21 @@ define(function (require, exports, module) {
                     }
 
                     if (type && (type == "configSnippetPodHP")) {
+                        this.options.ckeditor.wordcount = {
+                            showParagraphs: false,
+                            showWordCount: true,
+                            showCharCount: true,
+                            countSpacesAsChars: true,
+                            countHTML: false,
+                            warnOnLimitOnly: true,
+                            maxCharCount: 250
+                        }
+                        this.options.ckeditor.height = "100";
+                        this.options.ckeditor.autoParagraph = false;
+                        this.options.ckeditor.enterMode = window.CKEDITOR.ENTER_BR ;
+                    }
+
+                    if (type && (type == "configSnippetPodHP2")) {
                         this.options.ckeditor.wordcount = {
                             showParagraphs: false,
                             showWordCount: true,
