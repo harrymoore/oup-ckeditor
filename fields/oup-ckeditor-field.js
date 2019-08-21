@@ -633,7 +633,7 @@ define(function (require, exports, module) {
                         }
                     }
 
-                    if (type && (type == "configSnippet")) {
+                    if (type && (type == "configSnippet" || type == "configSnippetPodHP3")) {
                         this.options.ckeditor.wordcount = {
                             showParagraphs: false,
                             showWordCount: true,
