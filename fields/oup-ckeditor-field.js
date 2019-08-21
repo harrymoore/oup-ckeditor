@@ -136,6 +136,23 @@ define(function (require, exports, module) {
             ]
         ]
     };
+    let config9 = {
+        "height": 50,
+        "toolbar": [
+            [
+                "SpecialChar",
+                "Italic",
+                "Subscript",
+                "Superscript",
+                "-",
+                "RemoveFormat"
+            ],
+            [
+                "Link",
+                "Unlink"
+            ]
+        ]
+    };
     let config3 = {
         "height": 100,
         "toolbar": [
@@ -462,6 +479,7 @@ define(function (require, exports, module) {
                 "configSnippet": Object.create(config2),
                 "configSnippetPodHP": Object.create(configempty),
                 "configSnippetPodHP2": Object.create(config2),
+                "configSnippetPodHP3": Object.create(config9),
                 "config3": Object.create(config3),
                 "configSecDescHP": Object.create(config3),
                 "configMainDescHP": Object.create(config3),
