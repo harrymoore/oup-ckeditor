@@ -4,12 +4,8 @@ define(function (require, exports, module) {
     var Alpaca = require("alpaca");
     var OneTeam = require("oneteam");
 
-    var moduleId = module.uri.match(/^.+(_modules[^\/]+)\/.*/)[1];
-    var cssPath = "../../../" + moduleId + "/oup-ckeditor/resources/ckeditorCstm.css";
-
     window.CKEDITOR.config.disableNativeSpellChecker = false;
     window.CKEDITOR.config.forcePasteAsPlainText = true;
-    window.CKEDITOR.config.contentsCss = cssPath;
 
     let configempty = {
         "height": 50,
