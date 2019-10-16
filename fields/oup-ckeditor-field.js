@@ -462,6 +462,7 @@ define(function (require, exports, module) {
             "uploadPath": null
         }
     };
+    
 
     Alpaca.Fields.OUPCKEditorField = Alpaca.Fields.CKEditorField.extend(
         /**
@@ -478,6 +479,7 @@ define(function (require, exports, module) {
                 "configSecTitleHP": Object.create(config2),
                 "configSnippet": Object.create(config2),
                 "configSnippetPodHP": Object.create(configempty),
+                "configSnippetBR": Object.create(configempty),
                 "configSnippetPodHP2": Object.create(config2),
                 "configSnippetPodHP3": Object.create(config9),
                 "config3": Object.create(config3),
@@ -645,6 +647,13 @@ define(function (require, exports, module) {
                         }
                         this.options.ckeditor.height = "100";
                     }
+
+                    if (type && (type == "configSnippetBR")) {
+                        this.options.ckeditor.height = "100";
+                        this.options.ckeditor.autoParagraph = false;
+                        this.options.ckeditor.enterMode = window.CKEDITOR.ENTER_BR ;
+                    }
+
 
                     if (type && (type == "configSnippetPodHP")) {
                         this.options.ckeditor.wordcount = {
