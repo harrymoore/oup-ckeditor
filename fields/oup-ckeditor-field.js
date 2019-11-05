@@ -111,7 +111,7 @@ define(function (require, exports, module) {
             "hideUploadButton": true,
             "imagePickerConfig": {
                 "rootContainerPath": "../../..",
-                "initialContainerPath": "../Image Library",
+                "initialContainerPath": "./",
             }
         },
         "cloudcms-link": {
@@ -119,7 +119,7 @@ define(function (require, exports, module) {
             "hideUploadButton": true,
             "linkPickerConfig": {
                 "rootContainerPath": "../../..",
-                "initialContainerPath": "../Document Library",
+                "initialContainerPath": "./",
             }
         }
     };
