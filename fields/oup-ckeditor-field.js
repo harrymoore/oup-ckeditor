@@ -107,7 +107,7 @@ define(function (require, exports, module) {
 
         ],
         "cloudcms-image": {
-            "imagePickerType": "file-picker",
+            "imagePickerType": "oup-file-picker",
             "hideUploadButton": true,
             "imagePickerConfig": {
                 "rootContainerPath": "../../..",
