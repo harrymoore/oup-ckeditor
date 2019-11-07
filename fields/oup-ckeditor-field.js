@@ -115,11 +115,11 @@ define(function (require, exports, module) {
             }
         },
         "cloudcms-link": {
-            "linkPickerType": "file-picker",
+            "linkPickerType": "oup-file-picker",
             "hideUploadButton": true,
             "linkPickerConfig": {
                 "rootContainerPath": "../../..",
-                "initialContainerPath": "./",
+                "initialContainerPath": "{{nearestJournalFolderPath}}/Row Containers, Content Blocks, and Widgets",
             }
         }
     };
@@ -223,13 +223,12 @@ define(function (require, exports, module) {
             }
         ],
         "cloudcms-image": {
-            "imagePickerType": "file-picker",
+            "imagePickerType": "oup-file-picker",
             "hideUploadButton": true,
             "imagePickerConfig": {
                 "rootContainerPath": "../../..",
-                "initialContainerPath": "./"
-            },
-            "uploadPath": null
+                "initialContainerPath": "{{nearestJournalFolderPath}}/Image Library",
+            }
         }
     };
 
@@ -355,13 +354,12 @@ define(function (require, exports, module) {
             }
         ],
         "cloudcms-image": {
-            "imagePickerType": "file-picker",
+            "imagePickerType": "oup-file-picker",
             "hideUploadButton": true,
             "imagePickerConfig": {
                 "rootContainerPath": "../../..",
-                "initialContainerPath": "./"
-            },
-            "uploadPath": null
+                "initialContainerPath": "{{nearestJournalFolderPath}}/Image Library",
+            }
         }
     };
     let config7 = {
@@ -453,13 +451,12 @@ define(function (require, exports, module) {
         ],
         "removeButtons": null,
         "cloudcms-image": {
-            "imagePickerType": "file-picker",
+            "imagePickerType": "oup-file-picker",
             "hideUploadButton": true,
             "imagePickerConfig": {
                 "rootContainerPath": "../../..",
-                "initialContainerPath": "./"
-            },
-            "uploadPath": null
+                "initialContainerPath": "{{nearestJournalFolderPath}}/Image Library",
+            }
         }
     };
     
