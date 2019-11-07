@@ -111,7 +111,7 @@ define(function (require, exports, module) {
             "hideUploadButton": true,
             "imagePickerConfig": {
                 "rootContainerPath": "../../..",
-                "initialContainerPath": "./",
+                "initialContainerPath": "{{nearestJournalFolderPath}}/Image Library",
             }
         },
         "cloudcms-link": {
